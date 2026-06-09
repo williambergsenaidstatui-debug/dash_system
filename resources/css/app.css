@@ -1,4 +1,7 @@
 @import "./navbar.css";
+@import "./portfolio.css";
+@import "./diagnostico.css";
+@import "./imgproj.css";
 
 @tailwind base;
 @tailwind components;

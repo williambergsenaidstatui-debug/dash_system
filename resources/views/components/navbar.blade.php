@@ -1,17 +1,17 @@
 <header id="nav" class="site-header" aria-label="Menu principal">
-  <div class="container header-inner">
-    <a href="{{ url('/') }}" class="brand" aria-label="Nexus">
-      <img src="{{ asset('fotofinal.png') }}" alt="Logo Nexus" class="brand-logo">
-      <span class="brand-title"></span>
-    </a>
+    <div class="container header-inner">
+        <a href="{{ route('portfolio') }}" class="brand" aria-label="Dash System">
+            <img src="{{ asset('fotofinal.png') }}" alt="Logo Dash System" class="brand-logo">
+            <span class="brand-title"></span>
+        </a>
 
-    <nav class="nav" aria-label="Navegacao principal">
-      <ul>
-        <li><a href="{{ url('/') }}">Inicio</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
+        <nav class="nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="{{ route('portfolio') }}">Início</a></li>
+                <li><a href="{{ route('portfolio') }}#home">Sobre Nós</a></li>
+                <li><a href="{{ route('portfolio') }}#servicos">Serviços</a></li>
+                <li><a href="{{ route('portfolio') }}#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>

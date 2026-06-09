@@ -9,7 +9,11 @@ Route::get('/', function () {
 
 Route::get('/portifolio', function () {
     return view('portifolio');
-});
+})->name('portfolio');
+
+Route::get('/diagnostico', function () {
+    return view('diagnostico');
+})->name('diagnostico');
 
 
 
