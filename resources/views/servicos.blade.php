@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dash System | Empresa de TI</title>
+    <title>Serviços | Dash System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
@@ -17,11 +17,11 @@
     <main>
         <section id="home" class="portfolio-hero section-animate">
             <div class="portfolio-content">
-                <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio.</h1>
-                <h2>Desenvolvimento, automa&ccedil;&otilde;es e suporte em tecnologia</h2>
+                <h1>Servi&ccedil;os digitais para empresas.</h1>
+                <h2>Sites, sistemas, integra&ccedil;&otilde;es e automa&ccedil;&otilde;es</h2>
                 <p>
-                    A Dash System cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
-                    sua presen&ccedil;a digital, automatizar tarefas e organizar processos com tecnologia.
+                    Criamos solu&ccedil;&otilde;es sob medida para melhorar a presen&ccedil;a digital,
+                    organizar processos e reduzir trabalho manual.
                 </p>
 
                 <div class="portfolio-actions">
@@ -46,10 +46,9 @@
                 <i class="fas fa-laptop-code"></i>
             </div>
         </section>
+ <x-cards_servico />
+        <x-precos />
 
-        <x-imgproj />
-        @include('components.opiniao_cards')
-        <x-time />
     </main>
 
     <div id="contato">

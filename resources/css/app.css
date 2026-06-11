@@ -2,6 +2,10 @@
 @import "./portfolio.css";
 @import "./diagnostico.css";
 @import "./imgproj.css";
+@import "./time.css";
+@import "./precos.css";
+@import "./contato.css";
+@import "./style.css";
 
 @tailwind base;
 @tailwind components;

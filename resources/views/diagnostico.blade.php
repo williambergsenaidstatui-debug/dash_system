@@ -8,11 +8,11 @@
 </head>
 <body class="diagnostico-page">
     <nav class="diagnostico-nav">
-        <a class="diagnostico-logo" href="{{ route('portfolio') }}">Dash System</a>
-        <a class="diagnostico-back" href="{{ route('portfolio') }}">&larr; Voltar ao site</a>
+        <a class="diagnostico-logo" href="{{ route('inicio') }}">Dash System</a>
+        <a class="diagnostico-back" href="{{ route('inicio') }}">&larr; Voltar ao site</a>
     </nav>
 
-    <header class="diagnostico-header">
+    <header class="diagnostico-header section-animate">
         <p class="diagnostico-eyebrow">Diagnóstico gratuito &middot; 2 minutos</p>
         <h1>Entenda onde sua empresa pode evoluir com tecnologia.</h1>
         <p>
@@ -22,7 +22,7 @@
     </header>
 
     <main>
-        <section class="progress-wrap" aria-label="Progresso do diagnóstico">
+        <section class="progress-wrap section-animate" aria-label="Progresso do diagnóstico">
             <div class="progress-labels">
                 <span id="step-label">Passo 1 de 5</span>
                 <span id="pct-label">20%</span>
@@ -32,7 +32,7 @@
             </div>
         </section>
 
-        <section class="diagnostico-card" id="quiz-card">
+        <section class="diagnostico-card section-animate" id="quiz-card">
             <div class="step active" id="s1">
                 <p class="step-q">Em qual área sua empresa atua?</p>
                 <p class="step-hint">Essa informação ajuda a direcionar melhor as sugestões para a realidade do seu mercado.</p>
@@ -120,7 +120,7 @@
             </div>
         </section>
 
-        <section class="diagnostico-card" id="result">
+        <section class="diagnostico-card section-animate" id="result">
             <div class="result-header">
                 <div class="result-icon">✓</div>
                 <div>

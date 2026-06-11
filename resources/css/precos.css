@@ -1,0 +1,188 @@
+.pricing-section {
+    background: #ffffff;
+    padding: 86px 24px;
+}
+
+.pricing-container {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.pricing-heading {
+    max-width: 760px;
+}
+
+.pricing-heading p:last-child {
+    margin: -18px 0 0;
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 36px;
+}
+
+.pricing-card {
+    display: flex;
+    min-height: 520px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 30px;
+    background: #f8fafc;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+}
+
+.pricing-card-featured {
+    color: #ffffff;
+    background: #111827;
+    box-shadow: 0 24px 58px rgba(17, 24, 39, 0.18);
+}
+
+.pricing-label {
+    display: inline-flex;
+    margin-bottom: 14px;
+    color: #2563eb;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.pricing-card-featured .pricing-label {
+    color: #93c5fd;
+}
+
+.pricing-card h4 {
+    margin: 0;
+    color: inherit;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.pricing-price {
+    margin: 16px 0 12px;
+    color: #0f172a;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.pricing-card-featured .pricing-price {
+    color: #ffffff;
+}
+
+.pricing-description {
+    margin: 0;
+    color: #475569;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.pricing-card-featured .pricing-description {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.pricing-list {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.pricing-card-featured .pricing-list li {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.pricing-list i {
+    margin-top: 4px;
+    color: #16a34a;
+    font-size: 0.82rem;
+}
+
+.pricing-tech {
+    display: grid;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.pricing-card-featured .pricing-tech {
+    border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+.pricing-tech strong {
+    color: #0f172a;
+    font-size: 0.86rem;
+    font-weight: 800;
+}
+
+.pricing-card-featured .pricing-tech strong {
+    color: #ffffff;
+}
+
+.pricing-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pricing-tags span {
+    display: inline-flex;
+    min-height: 30px;
+    align-items: center;
+    padding: 0 10px;
+    color: #334155;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pricing-card-featured .pricing-tags span {
+    color: #e5e7eb;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.pricing-btn {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing-section {
+        padding: 64px 18px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        min-height: auto;
+    }
+}

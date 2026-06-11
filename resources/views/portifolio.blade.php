@@ -15,30 +15,30 @@
     <x-navbar />
 
     <main>
-        <section id="home" class="portfolio-hero">
+        <section id="home" class="portfolio-hero section-animate">
             <div class="portfolio-content">
-                <h1>Soluções digitais para o seu negócio.</h1>
-                <h2>Desenvolvimento, automações e suporte em tecnologia</h2>
+                <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio.</h1>
+                <h2>Desenvolvimento, automa&ccedil;&otilde;es e suporte em tecnologia</h2>
                 <p>
-                    A Dash System cria sites, sistemas e integrações para empresas que querem melhorar
-                    sua presença digital, automatizar tarefas e organizar processos com tecnologia.
+                    A Dash System cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
+                    sua presen&ccedil;a digital, automatizar tarefas e organizar processos com tecnologia.
                 </p>
 
                 <div class="portfolio-actions">
                     <a class="portfolio-btn portfolio-btn-primary" href="{{ route('diagnostico') }}">
                         <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                        Diagnóstico gratuito
+                        Diagn&oacute;stico gratuito
                     </a>
-                    <a class="portfolio-btn portfolio-btn-secondary" href="#contato">
+                    <a class="portfolio-btn portfolio-btn-secondary" href="{{ route('contato') }}">
                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         Falar conosco
                     </a>
                 </div>
 
                 <div class="portfolio-social" aria-label="Redes sociais">
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="{{ route('contato') }}" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="{{ route('contato') }}" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -47,10 +47,10 @@
             </div>
         </section>
 
-        <section id="servicos" class="portfolio-services">
-          
-
         <x-imgproj />
+        @include('components.opiniao_cards')
+
+        <x-time />
     </main>
 
     <div id="contato">

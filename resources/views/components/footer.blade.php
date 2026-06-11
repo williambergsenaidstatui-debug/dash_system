@@ -13,13 +13,13 @@
                     Transformando ideias em realidade digital.
                 </p>
                 <div class="flex flex-wrap gap-2 pt-2">
-                    <a href="#" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gray-900 text-white transition-all duration-300 hover:scale-110 hover:bg-gray-700">
+                    <a href="{{ route('contato') }}" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gray-900 text-white transition-all duration-300 hover:scale-110 hover:bg-gray-700">
                         <i class="fab fa-instagram text-sm"></i>
                     </a>
-                    <a href="#" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-600 text-white transition-all duration-300 hover:scale-110 hover:bg-green-700">
+                    <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-600 text-white transition-all duration-300 hover:scale-110 hover:bg-green-700">
                         <i class="fab fa-whatsapp text-sm"></i>
                     </a>
-                    <a href="#" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white transition-all duration-300 hover:scale-110 hover:bg-blue-800">
+                    <a href="{{ route('contato') }}" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white transition-all duration-300 hover:scale-110 hover:bg-blue-800">
                         <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
                     <a href="{{ route('diagnostico') }}" aria-label="Diagnóstico gratuito" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-purple-600 text-white transition-all duration-300 hover:scale-110 hover:bg-purple-700">
@@ -34,11 +34,11 @@
                     <span class="absolute -bottom-2 left-0 h-0.5 w-8 rounded-full bg-black"></span>
                 </h3>
                 <ul class="space-y-2.5">
-                    <li><a href="{{ url('/') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Home</span></a></li>
-                    <li><a href="{{ route('portfolio') }}#home" class="footer-link"><i class="fas fa-chevron-right"></i><span>Sobre</span></a></li>
-                    <li><a href="{{ route('portfolio') }}#servicos" class="footer-link"><i class="fas fa-chevron-right"></i><span>Serviços</span></a></li>
+                    <li><a href="{{ route('inicio') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Home</span></a></li>
+                    <li><a href="{{ route('sobre') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Sobre</span></a></li>
+                    <li><a href="{{ route('servicos') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Serviços</span></a></li>
                     <li><a href="{{ route('diagnostico') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Diagnóstico</span></a></li>
-                    <li><a href="#contato" class="footer-link"><i class="fas fa-chevron-right"></i><span>Contato</span></a></li>
+                    <li><a href="{{ route('contato') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Contato</span></a></li>
                 </ul>
             </div>
 
@@ -75,7 +75,7 @@
                 <p class="text-sm leading-relaxed text-gray-600">
                     Queremos saber o que você achou sobre nosso serviço. Ajude a nossa equipe com sua avaliação.
                 </p>
-                <form class="space-y-3">
+                <form class="space-y-3" action="{{ route('contato') }}" method="GET">
                     <div class="relative">
                         <i class="fas fa-comment absolute left-3 top-1/2 -translate-y-1/2 text-sm text-gray-400"></i>
                         <input type="text" placeholder="Seu feedback" required class="w-full rounded-lg border border-gray-300 py-2.5 pl-10 pr-3 text-sm outline-none transition-all duration-300 focus:border-gray-900 focus:ring-2 focus:ring-gray-200">
@@ -96,7 +96,7 @@
             <div class="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
                 <p class="text-xs text-gray-500">
                     &copy; 2026 Todos os direitos reservados | Desenvolvido por
-                    <a href="{{ route('portfolio') }}" class="font-semibold text-gray-900 hover:underline">Dash System</a>
+                    <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash System</a>
                 </p>
                 <div class="flex gap-4 text-xs text-gray-500">
                     <a href="#" class="transition-colors hover:text-gray-900">Política de Privacidade</a>

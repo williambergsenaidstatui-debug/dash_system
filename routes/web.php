@@ -5,11 +5,27 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('inicio');
-});
+})->name('inicio');
 
 Route::get('/portifolio', function () {
     return view('portifolio');
 })->name('portfolio');
+
+Route::get('/projetos', function () {
+    return view('projetos');
+})->name('projetos');
+
+Route::get('/sobre', function () {
+    return view('sobre');
+})->name('sobre');
+
+Route::get('/servicos', function () {
+    return view('servicos');
+})->name('servicos');
+
+Route::get('/contato', function () {
+    return view('contato');
+})->name('contato');
 
 Route::get('/diagnostico', function () {
     return view('diagnostico');
@@ -19,7 +35,7 @@ Route::get('/diagnostico', function () {
 
 Route::get('/inicio', function () {
     return view('inicio');
-});
+})->name('inicio.alias');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
