@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link rel="icon" href="{{ asset('pretobranco.png') }}?v={{ filemtime(public_path('pretobranco.png')) }}" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre N&oacute;s | Dash System</title>
+  <title>Sobre N&oacute;s | Dash Brasil</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
         <div class="hero__copy">
           <h1>Constru&iacute;mos solu&ccedil;&otilde;es digitais com clareza e prop&oacute;sito.</h1>
           <p class="hero__text">
-            A Dash System une estrat&eacute;gia, tecnologia e experi&ecirc;ncia do usu&aacute;rio para criar produtos digitais que funcionam bem no dia a dia e crescem junto com o neg&oacute;cio.
+            A Dash Brasil une estrat&eacute;gia, tecnologia e experi&ecirc;ncia do usu&aacute;rio para criar produtos digitais que funcionam bem no dia a dia e crescem junto com o neg&oacute;cio.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 <header id="nav" class="site-header" aria-label="Menu principal">
     <div class="container header-inner">
-        <a href="{{ route('inicio') }}" class="brand" aria-label="Dash System">
-            <img src="{{ asset('fotofinal.png') }}" alt="Logo Dash System" class="brand-logo">
+        <a href="{{ route('inicio') }}" class="brand" aria-label="Dash Brasil">
+            <img src="{{ asset('fotofinal.png') }}" alt="Logo Dash Brasil" class="brand-logo">
             <span class="brand-title"></span>
         </a>
 

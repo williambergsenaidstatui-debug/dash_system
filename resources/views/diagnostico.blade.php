@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="icon" href="{{ asset('pretobranco.png') }}?v={{ filemtime(public_path('pretobranco.png')) }}" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico Gratuito - Dash System</title>
+    <title>Diagnóstico Gratuito - Dash Brasil</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="diagnostico-page">
     <nav class="diagnostico-nav">
-        <a class="diagnostico-logo" href="{{ route('inicio') }}">Dash System</a>
+        <a class="diagnostico-logo" href="{{ route('inicio') }}">Dash Brasil</a>
         <a class="diagnostico-back" href="{{ route('inicio') }}">&larr; Voltar ao site</a>
     </nav>
 
@@ -141,7 +142,7 @@
             </div>
 
             <div class="diagnosis-box">
-                <h3>Como a Dash System pode ajudar</h3>
+                <h3>Como a Dash Brasil pode ajudar</h3>
                 <div id="solucoes-list"></div>
             </div>
 

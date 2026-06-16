@@ -6,7 +6,7 @@
                     <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-black">
                         <span class="text-lg font-bold text-white">D</span>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900">Dash System</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Dash Brasil</h3>
                 </div>
                 <p class="text-sm leading-relaxed text-gray-600">
                     Estamos focados no desenvolvimento web, automações e soluções tecnológicas sob medida para empresas.
@@ -54,7 +54,7 @@
                     </li>
                     <li class="group flex items-center gap-3 text-sm text-gray-600">
                         <i class="fas fa-envelope text-gray-900 transition-transform duration-300 group-hover:scale-110"></i>
-                        <a href="mailto:dashsystem@gmail.com" class="transition-colors hover:text-gray-900">dashsystem@gmail.com</a>
+                        <a href="mailto:dashbrasilds@gmail.com" class="transition-colors hover:text-gray-900">dashbrasilds@gmail.com</a>
                     </li>
                     <li class="group flex items-center gap-3 text-sm text-gray-600">
                         <i class="fab fa-whatsapp text-green-600 transition-transform duration-300 group-hover:scale-110"></i>
@@ -96,7 +96,7 @@
             <div class="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
                 <p class="text-xs text-gray-500">
                     &copy; 2026 Todos os direitos reservados | Desenvolvido por
-                    <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash System</a>
+                    <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash Brasil</a>
                 </p>
                 <div class="flex gap-4 text-xs text-gray-500">
                     <a href="#" class="transition-colors hover:text-gray-900">Política de Privacidade</a>

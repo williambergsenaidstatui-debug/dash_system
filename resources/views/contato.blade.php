@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="icon" href="{{ asset('pretobranco.png') }}?v={{ filemtime(public_path('pretobranco.png')) }}" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contato | Dash System</title>
+    <title>Contato | Dash Brasil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
         <template hidden>
             <div class="portfolio-content">
                 <h1>Contato</h1>
-                <h2>Fale com a Dash System/Vamos conversar sobre o seu projeto.</h2>
+                <h2>Fale com a Dash Brasil. Vamos conversar sobre o seu projeto.</h2>
                 <p>
                     Esta página está pronta para receber formulário, WhatsApp, telefone,
                     endereço e demais canais de atendimento.
@@ -46,13 +47,13 @@
             <aside class="channels section-animate">
                 <p class="channels__title">Canais diretos</p>
 
-                <a href="mailto:dashsystem@gmail.com" class="channel-card" aria-label="Enviar e-mail">
+                <a href="mailto:dashbrasilds@gmail.com" class="channel-card" aria-label="Enviar e-mail">
                     <div class="channel-card__icon">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                     </div>
                     <div class="channel-card__info">
                         <span class="channel-card__label">E-mail</span>
-                        <span class="channel-card__value">dashsystem@gmail.com</span>
+                        <span class="channel-card__value">dashbrasilds@gmail.com</span>
                     </div>
                     <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
                 </a>

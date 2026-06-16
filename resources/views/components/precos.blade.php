@@ -14,7 +14,7 @@
                 <div>
                     <span class="pricing-label">Site essencial</span>
                     <h4>Front-End</h4>
-                    <p class="pricing-price">R$ 499 - R$ 699</p>
+                    <p class="pricing-price"></p>
                     <p class="pricing-description">
                         Ideal para landing pages, p&aacute;ginas institucionais e interfaces responsivas.
                     </p>
@@ -49,7 +49,7 @@
                 <div>
                     <span class="pricing-label">Integra&ccedil;&otilde;es</span>
                     <h4>API/Back-end</h4>
-                    <p class="pricing-price">R$ 2.000 - R$ 5.000</p>
+                    <p class="pricing-price"></p>
                     <p class="pricing-description">
                         Para conectar sistemas, automatizar fluxos e organizar dados entre ferramentas.
                     </p>

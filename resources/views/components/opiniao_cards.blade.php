@@ -2,7 +2,7 @@
     <div class="testimonials-container">
         <div class="testimonials-heading">
             <p class="projects-kicker">Opini&otilde;es</p>
-            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Dash System.</h3>
+            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Dash Brasil.</h3>
         </div>
 
         <div class="testimonials-grid">
@@ -11,7 +11,7 @@
                     <i class="fas fa-quote-left"></i>
                 </div>
                 <p class="testimonial-text">
-                    A Dash System transformou a forma como gerenciamos nossos processos internos. O sistema
+                    A Dash Brasil transformou a forma como gerenciamos nossos processos internos. O sistema
                     personalizado ficou f&aacute;cil de usar e nos ajudou a economizar tempo.
                 </p>
                 <div class="testimonial-author">
