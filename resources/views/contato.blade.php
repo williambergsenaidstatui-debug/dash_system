@@ -5,32 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Contato | Dash Brasil</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <x-animation-scripts />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="portfolio-page">
     <x-navbar />
 
     <main class="contact-page">
-        <template hidden>
-            <div class="portfolio-content">
-                <h1>Contato</h1>
-                <h2>Fale com a Dash Brasil. Vamos conversar sobre o seu projeto.</h2>
-                <p>
-                    Esta página está pronta para receber formulário, WhatsApp, telefone,
-                    endereço e demais canais de atendimento.
-                </p>
-            </div>
-
-            <div class="portfolio-visual" aria-hidden="true">
-                <i class="fas fa-envelope-open-text"></i>
-            </div>
-        </template>
-
         <section class="contact-hero section-animate">
             <div class="contact-hero__inner">
                 <p class="eyebrow">Contato</p>
@@ -40,8 +32,6 @@
                 </p>
             </div>
         </section>
-
-
 
         <section class="contact-body">
             <aside class="channels section-animate">
@@ -58,7 +48,13 @@
                     <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" class="channel-card" aria-label="Falar no WhatsApp">
+                <a
+                    href="https://wa.me/5511994083005"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="channel-card"
+                    aria-label="Falar no WhatsApp"
+                >
                     <div class="channel-card__icon">
                         <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     </div>
@@ -69,7 +65,11 @@
                     <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
                 </a>
 
-                <a href="{{ route('diagnostico') }}" class="channel-card" aria-label="Fazer diagn&oacute;stico gratuito">
+                <a
+                    href="{{ route('diagnostico') }}"
+                    class="channel-card"
+                    aria-label="Fazer diagn&oacute;stico gratuito"
+                >
                     <div class="channel-card__icon">
                         <i class="fas fa-clipboard-check" aria-hidden="true"></i>
                     </div>
@@ -88,15 +88,31 @@
 
             <section class="form-wrap section-animate">
                 <p class="form-wrap__title">Envie uma mensagem</p>
+
                 <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row form-row--split">
                         <div class="form-group">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Seu nome" required autocomplete="name">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Seu nome"
+                                required
+                                autocomplete="name"
+                            >
                         </div>
+
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="seu@email.com"
+                                required
+                                autocomplete="email"
+                            >
                         </div>
                     </div>
 
@@ -114,7 +130,13 @@
 
                     <div class="form-group">
                         <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente o que voc&ecirc; precisa..." required></textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Descreva brevemente o que voc&ecirc; precisa..."
+                            required
+                        ></textarea>
                     </div>
 
                     <button type="submit" class="form-submit" id="submitBtn">
