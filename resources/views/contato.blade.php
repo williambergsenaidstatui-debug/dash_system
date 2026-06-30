@@ -49,7 +49,7 @@
                 </a>
 
                 <a
-                    href="https://wa.me/5511994083005"
+                    href="https://wa.me/5515998198163"
                     target="_blank"
                     rel="noreferrer"
                     class="channel-card"
@@ -60,7 +60,7 @@
                     </div>
                     <div class="channel-card__info">
                         <span class="channel-card__label">WhatsApp</span>
-                        <span class="channel-card__value">(11) 99408-3005</span>
+                        <span class="channel-card__value">(15) 99819-8163</span>
                     </div>
                     <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
                 </a>

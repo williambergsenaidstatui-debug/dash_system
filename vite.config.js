@@ -8,4 +8,10 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        minify: 'esbuild', // Compacta o JavaScript nativamente
+        cssMinify: true,   // Remove todos os espaços e quebras do CSS
+        reportCompressedSize: false,
+        chunkSizeWarningLimit: 1000,
+    }
 });

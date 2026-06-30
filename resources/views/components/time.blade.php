@@ -31,7 +31,7 @@
                     <a href="{{ route('contato') }}" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>

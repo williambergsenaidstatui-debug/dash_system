@@ -16,7 +16,7 @@
                     <a href="{{ route('contato') }}" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gray-900 text-white transition-all duration-300 hover:scale-110 hover:bg-gray-700">
                         <i class="fab fa-instagram text-sm"></i>
                     </a>
-                    <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-600 text-white transition-all duration-300 hover:scale-110 hover:bg-green-700">
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-600 text-white transition-all duration-300 hover:scale-110 hover:bg-green-700">
                         <i class="fab fa-whatsapp text-sm"></i>
                     </a>
                     <a href="{{ route('contato') }}" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white transition-all duration-300 hover:scale-110 hover:bg-blue-800">
@@ -58,7 +58,7 @@
                     </li>
                     <li class="group flex items-center gap-3 text-sm text-gray-600">
                         <i class="fab fa-whatsapp text-green-600 transition-transform duration-300 group-hover:scale-110"></i>
-                        <a href="tel:+5511994083005" class="transition-colors hover:text-gray-900">(11) 99408-3005</a>
+                        <a href="tel:+5515998198163" class="transition-colors hover:text-gray-900">(15) 99819-8163</a>
                     </li>
                     <li class="flex items-center gap-3 text-sm text-gray-600">
                         <i class="fas fa-clock text-gray-900"></i>

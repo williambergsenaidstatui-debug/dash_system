@@ -40,7 +40,7 @@
                 <div class="portfolio-social" aria-label="Redes sociais">
                     <a href="{{ route('contato') }}" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     <a href="{{ route('contato') }}" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="https://wa.me/5511994083005" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
 

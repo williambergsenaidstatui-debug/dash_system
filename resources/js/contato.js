@@ -43,6 +43,6 @@ if (form && submitBtn && btnText && formNote) {
     formNote.className = "form-note form-note--success";
     form.reset();
 
-    window.open(`https://wa.me/5511994083005?text=${text}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/5515998198163?text=${text}`, "_blank", "noopener,noreferrer");
   });
 }
