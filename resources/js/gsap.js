@@ -405,8 +405,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    initLenis();
-    initAos();
     initNavbarGsap();
     initHeroGsap();
     initProjectsGsap();
@@ -419,6 +417,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initServicesGsap();
     initDiagnosticoGsap();
     initFooterGsap();
-    initParallaxGsap();
     initHoverGsap();
 });
