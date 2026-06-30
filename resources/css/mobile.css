@@ -1,0 +1,277 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  #nav {
+    width: calc(100% - 24px);
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 14px;
+  }
+
+  .header-inner {
+    gap: 8px;
+  }
+
+  .brand {
+    height: auto;
+  }
+
+  .brand-logo {
+    width: 58px;
+    height: 46px;
+  }
+
+  .brand-title {
+    font-size: 22px;
+    margin-left: -8px;
+  }
+
+  .nav ul {
+    gap: 8px 12px;
+  }
+
+  .nav a {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .portfolio-hero,
+  .hero,
+  .contact-hero {
+    min-height: auto;
+    padding: 44px 18px 38px;
+  }
+
+  .portfolio-hero {
+    gap: 28px;
+  }
+
+  .portfolio-content,
+  .hero__copy,
+  .contact-hero__inner,
+  .diagnostico-header {
+    max-width: 100%;
+  }
+
+  .portfolio-content h1,
+  .about-page h1,
+  .contact-hero h1,
+  .diagnostico-header h1,
+  .project-folders h1 {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+    line-height: 1.08;
+  }
+
+  .portfolio-content h2 {
+    font-size: 1.22rem;
+    line-height: 1.25;
+  }
+
+  .portfolio-content p,
+  .hero__text,
+  .contact-hero__sub,
+  .pricing-heading p:last-child {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .portfolio-actions,
+  .testimonials-actions,
+  .btn-row,
+  .cta-final {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .portfolio-btn,
+  .btn-center,
+  .diag-btn,
+  .cta-final a,
+  .modal-link {
+    width: 100%;
+    max-width: 100%;
+    min-height: 48px;
+    text-align: center;
+  }
+
+  .portfolio-social {
+    justify-content: flex-start;
+  }
+
+  .portfolio-visual {
+    width: min(100%, 280px);
+    border-radius: 16px;
+  }
+
+  .projects-section,
+  .testimonials-section,
+  .pricing-section,
+  .time-section,
+  .project-folders {
+    padding: 48px 16px;
+  }
+
+  .projects-title {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+    line-height: 1.12;
+  }
+
+  .projects-grid,
+  .testimonials-grid,
+  .pricing-grid,
+  .team-grid,
+  .time-grid,
+  .content-grid,
+  .values,
+  .steps,
+  .folders-container,
+  .contact-body,
+  .hero__content {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .testimonial-card,
+  .pricing-card,
+  .text-block,
+  .value-card,
+  .process,
+  .channels,
+  .form-wrap,
+  .diagnostico-card {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .project-image {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .project-copy,
+  .testimonial-card,
+  .pricing-card,
+  .channels,
+  .form-wrap,
+  .diagnostico-card {
+    padding: 20px;
+  }
+
+  .contact-body,
+  .content-grid,
+  .values,
+  .process {
+    width: calc(100% - 32px);
+  }
+
+  .contact-body {
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .channel-card {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .channel-card__arrow {
+    display: none;
+  }
+
+  .form-row--split,
+  .options,
+  .score-row,
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .diagnostico-page {
+    padding: 24px 16px 48px;
+  }
+
+  .diagnostico-nav {
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .result-header {
+    align-items: flex-start;
+  }
+
+  .project-folders__header,
+  .folders-container {
+    padding-inline: 0;
+  }
+
+  .folders-container {
+    gap: 28px;
+  }
+
+  .pasta {
+    max-width: 230px;
+    margin-inline: auto;
+    filter: none;
+  }
+
+  .project-preview {
+    border-width: 4px;
+  }
+
+  .modal-overlay {
+    align-items: flex-start;
+    padding: 12px;
+    overflow-y: auto;
+  }
+
+  .modal {
+    max-height: none;
+  }
+
+  .modal-media {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav ul {
+    gap: 7px 10px;
+  }
+
+  .nav a {
+    font-size: 11px;
+  }
+
+  .portfolio-btn,
+  .diag-btn,
+  .form-submit {
+    padding-inline: 16px;
+  }
+
+  .project-copy,
+  .testimonial-card,
+  .pricing-card,
+  .channels,
+  .form-wrap,
+  .diagnostico-card {
+    padding: 18px;
+  }
+}
