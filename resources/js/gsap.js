@@ -60,8 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.innerWidth < 768) {
+            return;
+        }
+
         const lenis = new Lenis({
-            duration: 1.2,
+            duration: 0.8,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             smoothWheel: true,
         });
@@ -349,23 +353,33 @@ document.addEventListener("DOMContentLoaded", () => {
             ".portfolio-visual, .page-card, .dash-about-card, .dash-service-card, .hero__logo-card"
         );
 
-        if (!parallaxItems.length) {
+        if (!parallaxItems.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             return;
         }
 
-        window.addEventListener("scroll", () => {
+        let ticking = false;
+
+        const updateParallax = () => {
             const scrollY = window.scrollY;
 
             parallaxItems.forEach((item, index) => {
                 const depth = 0.08 + index * 0.015;
 
-                gsap.to(item, {
+                gsap.set(item, {
                     y: scrollY * depth,
-                    duration: 0.6,
-                    overwrite: true,
-                    ease: "power2.out",
                 });
             });
+
+            ticking = false;
+        };
+
+        window.addEventListener("scroll", () => {
+            if (ticking) {
+                return;
+            }
+
+            ticking = true;
+            requestAnimationFrame(updateParallax);
         }, { passive: true });
     }
 
