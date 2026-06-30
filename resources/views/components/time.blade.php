@@ -70,7 +70,7 @@
 
                 <div class="team-card-body">
                     <h4>Leonardo Marin Vieira</h4>
-                    <span>Backend</span>
+                    <span>API´s & Backend</span>
                     <p>
                         Organiza escopo, prioridades e comunica&ccedil;&atilde;o para manter cada entrega no caminho certo.
                     </p>
@@ -96,9 +96,9 @@
 
                 <div class="team-card-body">
                     <h4>Eric Dias</h4>
-                    <span>Backend</span>
+                    <span>Sistemas web</span>
                     <p>
-                        Organiza escopo, prioridades e comunica&ccedil;&atilde;o para manter cada entrega no caminho certo.
+                        Desenvolve aplicações web modernas, integra funcionalidades e otimiza processos.
                     </p>
                 </div>
 
