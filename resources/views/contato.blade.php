@@ -89,7 +89,8 @@
             <section class="form-wrap section-animate">
                 <p class="form-wrap__title">Envie uma mensagem</p>
 
-                <form class="contact-form" id="contactForm" novalidate>
+               <form class="contact-form" id="contactForm" method="POST" action="{{ route('contato.enviar') }}">
+    @csrf
                     <div class="form-row form-row--split">
                         <div class="form-group">
                             <label for="name">Nome</label>

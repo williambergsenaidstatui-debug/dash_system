@@ -2,10 +2,13 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContatoController;
 
 Route::get('/', function () {
     return view('inicio');
 })->name('inicio');
+
+
 
 Route::get('/portifolio', function () {
     return view('portifolio');
@@ -26,6 +29,8 @@ Route::get('/servicos', function () {
 Route::get('/contato', function () {
     return view('contato');
 })->name('contato');
+
+Route::post('/contato', [ContatoController::class, 'enviar'])->name('contato.enviar');
 
 Route::get('/diagnostico', function () {
     return view('diagnostico');
