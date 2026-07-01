@@ -89,8 +89,16 @@
             <section class="form-wrap section-animate">
                 <p class="form-wrap__title">Envie uma mensagem</p>
 
-               <form class="contact-form" id="contactForm" method="POST" action="{{ route('contato.enviar') }}">
-    @csrf
+                @if (session('success'))
+                    <p class="form-note form-note--success">{{ session('success') }}</p>
+                @endif
+
+                @if ($errors->any())
+                    <p class="form-note form-note--error">Revise os campos e tente novamente.</p>
+                @endif
+
+                <form class="contact-form" id="contactForm" method="POST" action="{{ route('contato.enviar') }}">
+                    @csrf
                     <div class="form-row form-row--split">
                         <div class="form-group">
                             <label for="name">Nome</label>
