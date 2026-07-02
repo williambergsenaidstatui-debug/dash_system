@@ -56,7 +56,7 @@
     </main>
 
     <div id="contato">
-        <x-footer />
+        <x-footer :wave="false" />
     </div>
 </body>
 </html>

@@ -1,4 +1,10 @@
-<footer class="mt-20 bg-white shadow-lg">
+@props(['wave' => true])
+
+@if ($wave)
+    <div class="footer-wave" aria-hidden="true" style="height: 320px; margin-bottom: -1px; background: #111827; clip-path: polygon(0 100%,0% 60%,50% 90%,4% 70%,54% 45%,100% 65%,40% 52%,66% 54%,68% 54%,99% 34%,100% 33%,100% 100%,0 100%); pointer-events: none;"></div>
+@endif
+
+<footer class="mt-20 bg-white shadow-lg" style="margin-top: 0; background-color: #111827 !important; box-shadow: none !important;">
     <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div class="space-y-4">
