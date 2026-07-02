@@ -207,9 +207,9 @@
 .portfolio-page footer {
     position: relative;
     margin-top: 0;
-    background: #111827;
+    background-color: #111827 !important;
     color: #ffffff;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .portfolio-page footer > * {
