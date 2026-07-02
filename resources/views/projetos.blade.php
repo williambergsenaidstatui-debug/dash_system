@@ -53,6 +53,7 @@
     <x-time />
     </main>
 
+    <x-footer-wave />
     <x-footer />
 </body>
 </html>

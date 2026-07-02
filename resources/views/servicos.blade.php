@@ -53,6 +53,7 @@
 
     </main>
 
+    <x-footer-wave />
     <div id="contato">
         <x-footer />
     </div>

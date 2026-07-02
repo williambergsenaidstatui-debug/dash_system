@@ -192,15 +192,29 @@
 }
 
 .portfolio-page #contato {
-    margin-top: 20px;
+    margin-top: 0;
     background: #111827;
 }
 
+.footer-wave {
+    height: 320px;
+    margin-bottom: -1px;
+    background: #111827;
+    clip-path: polygon(0 100%,0% 60%,50% 90%,4% 70%,54% 45%,100% 65%,40% 52%,66% 54%,68% 54%,99% 34%,100% 33%,100% 100%,0 100%);
+    pointer-events: none;
+}
+
 .portfolio-page footer {
+    position: relative;
     margin-top: 0;
     background: #111827;
     color: #ffffff;
     box-shadow: none;
+}
+
+.portfolio-page footer > * {
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio-page footer h3,
