@@ -104,7 +104,7 @@
 .diagnostico-card {
     margin: 0 auto;
     padding: 2rem;
-    background: #ffffff;
+    background: #f4f4f2;
     border: 1px solid #e2e2de;
     border-radius: 14px;
 }
@@ -163,7 +163,7 @@
 }
 
 .opt.selected {
-    background: #ffffff;
+    background: #f4f4f2;
     border-color: #111110;
     box-shadow: inset 0 0 0 1px #111110;
 }
@@ -214,7 +214,7 @@
 }
 
 .text-input:focus {
-    background: #fff;
+    background: #f4f4f2;
     border-color: #888;
 }
 
@@ -243,7 +243,7 @@
 
 .diag-btn.primary {
     color: #111110;
-    background: #ffffff;
+    background: #f4f4f2;
     border-color: #111110;
 }
 
@@ -415,7 +415,7 @@
 .cta-final a {
     padding: 10px 20px;
     color: #111110;
-    background: #ffffff;
+    background: #f4f4f2;
     border: 1px solid #111110;
     border-radius: 99px;
     font-size: 13px;

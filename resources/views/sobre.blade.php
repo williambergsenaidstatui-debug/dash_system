@@ -12,7 +12,7 @@
   <x-animation-scripts />
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="portfolio-page">
   <x-navbar />
 
   <main class="about-page">

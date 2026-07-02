@@ -1,5 +1,5 @@
 .projects-section {
-    background: #ffffff;
+    background: #f4f4f2;
     padding: 76px 24px;
 }
 
@@ -37,7 +37,7 @@
     min-height: 100%;
     flex-direction: column;
     overflow: hidden;
-    background: #ffffff;
+    background: #f4f4f2;
     border: 1px solid rgba(15, 23, 42, 0.1);
     border-radius: 8px;
     box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
@@ -54,7 +54,7 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
-    background: #f3f4f6;
+    background: #f4f4f2;
 }
 
 .project-copy {
@@ -88,7 +88,7 @@
 }
 
 .testimonials-section {
-    background: #ffffff;
+    background: #f4f4f2;
     padding: 56px 24px 86px;
 }
 
@@ -116,7 +116,7 @@
     gap: 26px;
     padding: 28px;
     color: #111827;
-    background: #f8fafc;
+    background: #f4f4f2;
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 8px;
     box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
@@ -162,6 +162,19 @@
     justify-content: center;
     gap: 14px;
     margin-top: 36px;
+}
+
+.testimonials-actions .portfolio-btn-secondary {
+    color: #111827;
+    background: #f4f4f2;
+    border: 1px solid rgba(17, 24, 39, 0.18);
+    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
+}
+
+.testimonials-actions .portfolio-btn-secondary:hover,
+.testimonials-actions .portfolio-btn-secondary:focus {
+    background: #111827;
+    color: #ffffff;
 }
 
 @media (max-width: 800px) {

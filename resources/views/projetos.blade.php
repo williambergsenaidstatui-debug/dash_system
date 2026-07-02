@@ -51,6 +51,7 @@
     <x-projetos-pasta />
 
     <x-time />
+    </main>
 
     <x-footer />
 </body>

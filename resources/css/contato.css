@@ -1,6 +1,6 @@
 .contact-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, #ffffff 0%, #f4f4f5 48%, #ffffff 100%);
+  background: #f4f4f2;
   color: #0f0f10;
 }
 
@@ -63,7 +63,7 @@
 
 .channels,
 .form-wrap {
-  background: #ffffff;
+  background: #f4f4f2;
   border: 1px solid rgba(15, 15, 16, 0.12);
   border-radius: 8px;
   box-shadow: 0 24px 70px rgba(15, 15, 16, 0.08);
@@ -108,7 +108,7 @@
   height: 42px;
   place-items: center;
   color: #0f0f10;
-  background: #fafafa;
+  background: #f4f4f2;
   border: 1px solid rgba(15, 15, 16, 0.12);
   border-radius: 8px;
 }
@@ -186,7 +186,7 @@
   width: 100%;
   padding: 13px 15px;
   color: #0f0f10;
-  background: #fafafa;
+  background: #f4f4f2;
   border: 1px solid rgba(15, 15, 16, 0.12);
   border-radius: 8px;
   outline: none;
@@ -217,7 +217,7 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  background: #ffffff;
+  background: #f4f4f2;
   border-color: rgba(15, 15, 16, 0.2);
   box-shadow: 0 0 0 4px rgba(15, 15, 16, 0.06);
 }

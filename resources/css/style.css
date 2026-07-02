@@ -1,6 +1,6 @@
 :root {
-  --page: #f7f7f7;
-  --section: #ffffff;
+  --page: #f4f4f2;
+  --section: #f4f4f2;
   --dark: #090909;
   --text: #111111;
   --muted: #666666;
@@ -49,9 +49,7 @@ body {
   justify-items: center;
   padding: clamp(72px, 10vw, 120px) 32px clamp(56px, 8vw, 88px);
   color: var(--text);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(238, 238, 238, 0.82)),
-    linear-gradient(120deg, #ffffff, #ededed 58%, #fafafa);
+  background: #f4f4f2;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
@@ -100,7 +98,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: clamp(24px, 4vw, 44px);
-  background: #ffffff;
+  background: #f4f4f2;
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 18px;
   box-shadow: 0 22px 58px rgba(0, 0, 0, 0.1);

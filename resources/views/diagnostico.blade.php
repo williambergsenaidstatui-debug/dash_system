@@ -8,7 +8,7 @@
     <x-animation-scripts />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="diagnostico-page">
+<body class="diagnostico-page portfolio-page">
     <nav class="diagnostico-nav">
         <a class="diagnostico-logo" href="{{ route('inicio') }}">Dash Brasil</a>
         <a class="diagnostico-back" href="{{ route('inicio') }}">&larr; Voltar ao site</a>

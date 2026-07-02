@@ -1,8 +1,32 @@
 .portfolio-page {
+    position: relative;
     min-height: 100vh;
     color: #111827;
-    background: linear-gradient(135deg, #ffffff 0%, #f7f7f8 52%, #eceff3 100%);
+    background: #f4f4f2;
     font-family: "Plus Jakarta Sans", "Segoe UI", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.portfolio-page::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 0;
+    width: 100%;
+    height: min(1000vh,1100px);
+    background: #111827;
+    clip-path: polygon(0 0,100% 0,100% 34%,28% 39%,86% 34%,64% 49%,54% 55%,9% 64%,5% 4%,29% 60%,0 66%);
+    pointer-events: none;
+}
+
+.portfolio-page > #nav,
+.portfolio-page > main,
+.portfolio-page > #contato,
+.portfolio-page > footer,
+.portfolio-page > .diagnostico-nav,
+.portfolio-page > .diagnostico-header {
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio-hero {
@@ -23,7 +47,7 @@
 
 .portfolio-content h1 {
     margin-bottom: 16px;
-    color: #080808;
+    color: #ffffff;
     font-size: clamp(2.2rem, 4.8vw, 3.7rem);
     line-height: 1.08;
     font-weight: 800;
@@ -31,13 +55,13 @@
 
 .portfolio-content h2 {
     margin-bottom: 24px;
-    color: #374151;
+    color: #ffffff;
     font-size: clamp(1.35rem, 3vw, 2rem);
     font-weight: 600;
 }
 
 .portfolio-content p {
-    color: #4b5563;
+    color: #ffffff;
     font-size: 1.12rem;
     line-height: 1.7;
 }
@@ -69,9 +93,9 @@
 }
 
 .portfolio-btn-primary {
-    color: #ffffff;
-    background: #111827;
-    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.22);
+    color: #111827;
+    background: #f4f4f2;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-btn-primary i {
@@ -79,9 +103,9 @@
 }
 
 .portfolio-btn-secondary {
-    color: #111827;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    background: #ffffff;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .portfolio-btn-secondary i {
@@ -101,8 +125,8 @@
     align-items: center;
     justify-content: center;
     color: #111827;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #f4f4f2;
+    border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 50%;
     text-decoration: none;
     transition: transform 0.25s ease, background 0.25s ease;
@@ -110,8 +134,8 @@
 
 .portfolio-social a:hover,
 .portfolio-social a:focus {
-    color: #ffffff;
-    background: #111827;
+    color: #111827;
+    background: #e5e7eb;
     transform: translateY(-3px);
 }
 
@@ -121,7 +145,7 @@
     display: grid;
     place-items: center;
     color: #111827;
-    background: #ffffff;
+    background: #f4f4f2;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     box-shadow: 0 24px 60px rgba(17, 24, 39, 0.14);
@@ -132,7 +156,98 @@
 }
 
 .portfolio-services {
-    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 52%, #e5e7eb 100%);
+    background: #f4f4f2;
+}
+
+.portfolio-page .contact-page,
+.portfolio-page .about-page .hero {
+    background: transparent;
+}
+
+.portfolio-page .hero h1,
+.portfolio-page .hero__text,
+.portfolio-page .contact-page .eyebrow,
+.portfolio-page .contact-hero h1,
+.portfolio-page .contact-hero__sub,
+.portfolio-page .diagnostico-logo,
+.portfolio-page .diagnostico-back,
+.portfolio-page .diagnostico-eyebrow,
+.portfolio-page .diagnostico-header h1,
+.portfolio-page .diagnostico-header p {
+    color: #ffffff;
+}
+
+.portfolio-page .about-page .hero {
+    border-bottom: 0;
+}
+
+.portfolio-page .project-folders {
+    background: transparent;
+}
+
+.portfolio-page .project-folders__eyebrow,
+.portfolio-page .project-folders h1,
+.portfolio-page .folder-label {
+    color: #111827;
+}
+
+.portfolio-page #contato {
+    margin-top: 20px;
+    background: #111827;
+}
+
+.portfolio-page footer {
+    margin-top: 0;
+    background: #111827;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.portfolio-page footer h3,
+.portfolio-page footer p,
+.portfolio-page footer a,
+.portfolio-page footer li,
+.portfolio-page footer span,
+.portfolio-page footer i {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.portfolio-page footer h3,
+.portfolio-page footer .font-semibold {
+    color: #ffffff;
+}
+
+.portfolio-page footer .bg-black,
+.portfolio-page footer .bg-gray-900 {
+    background: #f4f4f2;
+    color: #111827;
+}
+
+.portfolio-page footer .bg-black span,
+.portfolio-page footer .bg-gray-900 i {
+    color: #111827;
+}
+
+.portfolio-page footer .border-gray-200 {
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.portfolio-page footer h3 span {
+    background: #f4f4f2;
+}
+
+.portfolio-page main .card-hover,
+.portfolio-page main .bg-white,
+.portfolio-page main .bg-gray-100 {
+    background-color: #f4f4f2;
+}
+
+.portfolio-page .footer-link {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.portfolio-page .footer-link:hover {
+    color: #ffffff;
 }
 
 .card-hover {

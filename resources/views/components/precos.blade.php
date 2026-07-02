@@ -1,3 +1,11 @@
+@php
+    $whatsappMessages = [
+        'front' => 'conversar com o time. Quero saber mais sobre esse plano: Front-End',
+        'backend' => 'conversar com o time. Quero saber mais sobre esse plano: API/Back-end',
+        'fullstack' => 'conversar com o time. Quero saber mais sobre esse plano: Full Stack',
+    ];
+@endphp
+
 <section id="precos" class="pricing-section section-animate" aria-labelledby="pricing-title">
     <div class="pricing-container">
         <div class="pricing-heading">
@@ -40,7 +48,7 @@
                     </div>
                 </div>
 
-                <a class="portfolio-btn portfolio-btn-secondary pricing-btn" href="{{ route('contato') }}">
+                <a class="portfolio-btn portfolio-btn-secondary pricing-btn" href="https://api.whatsapp.com/send?phone=5515998198163&text={{ rawurlencode($whatsappMessages['front']) }}" target="_blank" rel="noreferrer">
                     Solicitar proposta
                 </a>
             </article>
@@ -75,8 +83,8 @@
                     </div>
                 </div>
 
-                <a class="portfolio-btn portfolio-btn-primary pricing-btn" href="{{ route('diagnostico') }}">
-                    Fazer diagn&oacute;stico
+                <a class="portfolio-btn portfolio-btn-primary pricing-btn" href="https://api.whatsapp.com/send?phone=5515998198163&text={{ rawurlencode($whatsappMessages['backend']) }}" target="_blank" rel="noreferrer">
+                    Conversar com o time
                 </a>
             </article>
 
@@ -118,7 +126,7 @@
                 </div>
 
 
-                <a class="portfolio-btn portfolio-btn-secondary pricing-btn" href="{{ route('contato') }}">
+                <a class="portfolio-btn portfolio-btn-secondary pricing-btn" href="https://api.whatsapp.com/send?phone=5515998198163&text={{ rawurlencode($whatsappMessages['fullstack']) }}" target="_blank" rel="noreferrer">
                     Conversar com o time
                 </a>
             </article>

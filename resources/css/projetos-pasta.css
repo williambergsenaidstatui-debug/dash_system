@@ -27,7 +27,7 @@
   margin: 0 auto;
   padding: 56px 20px 36px;
   color: var(--pf-text);
-  background: #ffffff;
+  background: #f4f4f2;
 }
 
 .project-folders__header {
@@ -227,7 +227,7 @@
   width: min(980px, 100%);
   max-height: min(760px, 92vh);
   overflow: auto;
-  background: var(--pf-panel);
+  background: #f4f4f2;
   border: 1px solid var(--pf-line);
   border-radius: 8px;
   box-shadow: 0 30px 80px rgba(17, 24, 39, 0.24);
@@ -237,7 +237,7 @@
   position: relative;
   aspect-ratio: 16 / 8;
   min-height: 230px;
-  background: #f3f4f6;
+  background: #f4f4f2;
   overflow: hidden;
 }
 
