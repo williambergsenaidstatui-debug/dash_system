@@ -1,10 +1,10 @@
 <section class="project-folders">
     <header class="project-folders__header">
       <div>
-        <p class="project-folders__eyebrow">Projetos realizados</p>
-        <h1>Solu&ccedil;&otilde;es digitais prontas para serem abertas.</h1>
+        <p class="project-folders__eyebrow">Projetos em destaque</p>
+        <h1>Trabalhos reais com API Marvel, site de música e interfaces web completas.</h1>
+        <p>Mostramos soluções de back-end, experiências musicais e sites institucionais com foco em usabilidade, dados e apresentação.</p>
       </div>
-      
     </header>
 
     <section class="folders-container" id="foldersGrid" aria-label="Lista de projetos"></section>
@@ -16,6 +16,8 @@
         <img id="modalImage" alt="">
         <button class="close-modal" type="button" id="closeModal" aria-label="Fechar modal">&times;</button>
       </div>
+
+      <div class="modal-gallery" id="modalGallery" aria-label="Galeria de imagens do projeto"></div>
 
       <div class="modal-body">
         <div>
