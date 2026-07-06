@@ -54,4 +54,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+use Spatie\Sitemap\SitemapGenerator;
+
+Route::get('/gerar-sitemap', function () {
+    SitemapGenerator::create(config('app.url'))
+        ->writeToFile(public_path('sitemap.xml'));
+
+    return 'Sitemap gerado com sucesso em /public/sitemap.xml!';
+});
+
+
 require __DIR__.'/auth.php';
