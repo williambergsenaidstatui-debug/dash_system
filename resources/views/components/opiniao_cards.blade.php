@@ -16,7 +16,7 @@
                 </p>
                 <div class="testimonial-author">
                     <strong>Joao Silva</strong>
-                    <span>CEO da Empresa X</span>
+
                 </div>
             </article>
 
@@ -30,7 +30,7 @@
                 </p>
                 <div class="testimonial-author">
                     <strong>Maria Santos</strong>
-                    <span>Diretora de Marketing da Empresa Y</span>
+                    
                 </div>
             </article>
 
@@ -44,7 +44,7 @@
                 </p>
                 <div class="testimonial-author">
                     <strong>Carlos Oliveira</strong>
-                    <span>Gerente de Opera&ccedil;&otilde;es da Empresa Z</span>
+                   
                 </div>
             </article>
         </div>

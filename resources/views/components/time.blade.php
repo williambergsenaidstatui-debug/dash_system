@@ -12,12 +12,14 @@
 
         <div class="team-grid">
             <article class="team-card section-animate">
-                <div class="team-avatar" aria-hidden="true">
-                    <i class="fas fa-code"></i>
-                </div>
+                <img
+                    class="team-avatar"
+                    src="{{ asset('williamberg.jpeg') }}"
+                    alt="Williamberg Concei&ccedil;&atilde;o Bispo"
+                >
 
                 <div class="team-card-body">
-                    <h4>Williamberg Conceição Bispo</h4>
+                    <h4>Williamberg Concei&ccedil;&atilde;o Bispo</h4>
                     <span>Desenvolvedor Full Stack</span>
                     <p>
                         Cria sistemas, APIs e integra&ccedil;&otilde;es com foco em performance e manuten&ccedil;&atilde;o.
@@ -38,9 +40,11 @@
             </article>
 
             <article class="team-card section-animate">
-                <div class="team-avatar" aria-hidden="true">
-                    <i class="fas fa-pen-nib"></i>
-                </div>
+                <img
+                    class="team-avatar"
+                    src="{{ asset('lucas.jpeg') }}"
+                    alt="Lucas Torres de Camargo"
+                >
 
                 <div class="team-card-body">
                     <h4>Lucas Torres de Camargo</h4>
@@ -64,13 +68,15 @@
             </article>
 
             <article class="team-card section-animate">
-                <div class="team-avatar" aria-hidden="true">
-                    <i class="fas fa-diagram-project"></i>
-                </div>
+                <img
+                    class="team-avatar"
+                    src="{{ asset('leonardo.jpeg') }}"
+                    alt="Leonardo Marin Vieira"
+                >
 
                 <div class="team-card-body">
                     <h4>Leonardo Marin Vieira</h4>
-                    <span>API´s & Backend</span>
+                    <span>API&acute;s & Backend</span>
                     <p>
                         Organiza escopo, prioridades e comunica&ccedil;&atilde;o para manter cada entrega no caminho certo.
                     </p>
@@ -87,22 +93,24 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-
             </article>
-             <article class="team-card section-animate">
-                <div class="team-avatar" aria-hidden="true">
-                    <i class="fas fa-diagram-project"></i>
-                </div>
+
+            <article class="team-card section-animate">
+                <img
+                    class="team-avatar"
+                    src="{{ asset('erik.jpeg') }}"
+                    alt="Eric Dias"
+                >
 
                 <div class="team-card-body">
                     <h4>Eric Dias</h4>
                     <span>Sistemas web</span>
                     <p>
-                        Desenvolve aplicações web modernas, integra funcionalidades e otimiza processos.
+                        Desenvolve aplica&ccedil;&otilde;es web modernas, integra funcionalidades e otimiza processos.
                     </p>
                 </div>
 
-                <div class="team-social" aria-label="Redes de Leonardo Marin Vieira">
+                <div class="team-social" aria-label="Redes de Eric Dias">
                     <a href="{{ route('contato') }}" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -113,7 +121,6 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-
             </article>
         </div>
     </div>
