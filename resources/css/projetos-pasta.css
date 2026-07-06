@@ -2,11 +2,11 @@
 .modal-overlay {
   --pf-text: #111827;
   --pf-muted: #4b5563;
-  --pf-folder: #484848;
-  --pf-folder-back: #1f2937;
+  --pf-folder: #020816;
+  --pf-folder-back: #070c18;
   --pf-folder-tab: #111827;
   --pf-accent: #111827;
-  --pf-accent-2: #2563eb;
+  --pf-accent-2: #0a2050;
   --pf-line: rgba(17, 24, 39, 0.14);
   --pf-panel: #ffffff;
 }

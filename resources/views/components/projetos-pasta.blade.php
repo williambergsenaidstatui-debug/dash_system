@@ -2,7 +2,7 @@
     <header class="project-folders__header">
       <div>
         <p class="project-folders__eyebrow">Projetos em destaque</p>
-        <h1>Trabalhos reais com API Marvel, site de música e interfaces web completas.</h1>
+        <h1>Projetos reais em web e APIs.</h1>
         <p>Mostramos soluções de back-end, experiências musicais e sites institucionais com foco em usabilidade, dados e apresentação.</p>
       </div>
     </header>
