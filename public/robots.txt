@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: http://dash_system.test/sitemap.xml
