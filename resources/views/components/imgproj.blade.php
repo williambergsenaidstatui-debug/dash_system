@@ -1,7 +1,7 @@
 <section class="projects-section section-animate" id="projetos">
     <div class="projects-container">
         <p class="projects-kicker">Projetos</p>
-        <h3 class="projects-title">Solu&ccedil;&otilde;es digitais criadas para empresas reais.</h3>
+        <h3 class="projects-title">Solu&ccedil;&otilde;es digitais criadas para empresas reais<span class="orange-dot">.</span></h3>
 
         <div class="projects-grid">
         <article class="project-card section-animate">

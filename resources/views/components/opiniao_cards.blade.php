@@ -2,7 +2,7 @@
     <div class="testimonials-container">
         <div class="testimonials-heading">
             <p class="projects-kicker">Opini&otilde;es</p>
-            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Dash Brasil.</h3>
+            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Dash Brasil<span class="orange-dot">.</span></h3>
         </div>
 
         <div class="testimonials-grid">
@@ -53,10 +53,6 @@
             <a class="portfolio-btn portfolio-btn-primary" href="{{ route('contato') }}">
                 <i class="fa-solid fa-message" aria-hidden="true"></i>
                 Enviar opini&atilde;o
-            </a>
-            <a class="portfolio-btn portfolio-btn-secondary" href="{{ route('diagnostico') }}">
-                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                Fazer diagn&oacute;stico
             </a>
         </div>
     </div>

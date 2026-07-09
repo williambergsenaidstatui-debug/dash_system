@@ -19,7 +19,7 @@
     <main>
         <section id="home" class="portfolio-hero section-animate">
             <div class="portfolio-content">
-                <h1>Servi&ccedil;os digitais para empresas.</h1>
+                <h1>Servi&ccedil;os digitais para empresas<span class="orange-dot">.</span></h1>
                 <h2>Sites, sistemas, integra&ccedil;&otilde;es e automa&ccedil;&otilde;es</h2>
                 <p>
                     Criamos solu&ccedil;&otilde;es sob medida para melhorar a presen&ccedil;a digital,
@@ -27,11 +27,7 @@
                 </p>
 
                 <div class="portfolio-actions">
-                    <a class="portfolio-btn portfolio-btn-primary" href="{{ route('diagnostico') }}">
-                        <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                        Diagn&oacute;stico gratuito
-                    </a>
-                    <a class="portfolio-btn portfolio-btn-secondary" href="{{ route('contato') }}">
+                    <a class="portfolio-btn portfolio-btn-primary" href="{{ route('contato') }}">
                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         Falar conosco
                     </a>

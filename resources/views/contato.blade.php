@@ -26,7 +26,7 @@
         <section class="contact-hero section-animate">
             <div class="contact-hero__inner">
                 <p class="eyebrow">Contato</p>
-                <h1>Vamos conversar sobre o seu projeto.</h1>
+                <h1>Vamos conversar sobre o seu projeto<span class="orange-dot">.</span></h1>
                 <p class="contact-hero__sub">
                     Fale com nossa equipe para tirar d&uacute;vidas, solicitar um or&ccedil;amento ou iniciar uma nova solu&ccedil;&atilde;o digital.
                 </p>
@@ -61,21 +61,6 @@
                     <div class="channel-card__info">
                         <span class="channel-card__label">WhatsApp</span>
                         <span class="channel-card__value">(15) 99819-8163</span>
-                    </div>
-                    <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
-                </a>
-
-                <a
-                    href="{{ route('diagnostico') }}"
-                    class="channel-card"
-                    aria-label="Fazer diagn&oacute;stico gratuito"
-                >
-                    <div class="channel-card__icon">
-                        <i class="fas fa-clipboard-check" aria-hidden="true"></i>
-                    </div>
-                    <div class="channel-card__info">
-                        <span class="channel-card__label">Diagn&oacute;stico</span>
-                        <span class="channel-card__value">Gratuito e r&aacute;pido</span>
                     </div>
                     <i class="fas fa-arrow-up-right-from-square channel-card__arrow" aria-hidden="true"></i>
                 </a>

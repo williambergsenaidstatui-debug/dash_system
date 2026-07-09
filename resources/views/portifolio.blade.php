@@ -19,7 +19,7 @@
     <main>
         <section id="home" class="portfolio-hero section-animate">
             <div class="portfolio-content">
-                <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio.</h1>
+                <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio<span class="orange-dot">.</span></h1>
                 <h2>Desenvolvimento, automa&ccedil;&otilde;es e suporte em tecnologia</h2>
                 <p>
                     A Dash Brasil cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
@@ -27,11 +27,7 @@
                 </p>
 
                 <div class="portfolio-actions">
-                    <a class="portfolio-btn portfolio-btn-primary" href="{{ route('diagnostico') }}">
-                        <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                        Diagn&oacute;stico gratuito
-                    </a>
-                    <a class="portfolio-btn portfolio-btn-secondary" href="{{ route('contato') }}">
+                    <a class="portfolio-btn portfolio-btn-primary" href="{{ route('contato') }}">
                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                         Falar conosco
                     </a>

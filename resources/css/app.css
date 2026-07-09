@@ -12,3 +12,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.orange-dot {
+    color: #f97316;
+}

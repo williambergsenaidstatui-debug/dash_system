@@ -3,7 +3,7 @@
         <div class="team-heading">
             <p class="projects-kicker">Time</p>
             <h3 class="projects-title" id="team-title">
-                Especialistas para transformar ideias em solu&ccedil;&otilde;es digitais.
+                Especialistas para transformar ideias em solu&ccedil;&otilde;es digitais<span class="orange-dot">.</span>
             </h3>
             <p>
                 Um time enxuto, pr&oacute;ximo do cliente e focado em entregar tecnologia que funciona no dia a dia.
@@ -86,9 +86,6 @@
                     <a href="{{ route('contato') }}" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="{{ route('diagnostico') }}" aria-label="Diagn&oacute;stico">
-                        <i class="fas fa-clipboard-check"></i>
-                    </a>
                     <a href="mailto:dashbrasilds@gmail.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -113,9 +110,6 @@
                 <div class="team-social" aria-label="Redes de Eric Dias">
                     <a href="{{ route('contato') }}" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="{{ route('diagnostico') }}" aria-label="Diagn&oacute;stico">
-                        <i class="fas fa-clipboard-check"></i>
                     </a>
                     <a href="mailto:dashbrasilds@gmail.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>

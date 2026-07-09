@@ -19,7 +19,7 @@
     <section class="hero section-animate">
       <div class="hero__content">
         <div class="hero__copy">
-          <h1>Constru&iacute;mos solu&ccedil;&otilde;es digitais com clareza e prop&oacute;sito.</h1>
+          <h1>Constru&iacute;mos solu&ccedil;&otilde;es digitais com clareza e prop&oacute;sito<span class="orange-dot">.</span></h1>
           <p class="hero__text">
             A Dash Brasil une estrat&eacute;gia, tecnologia e experi&ecirc;ncia do usu&aacute;rio para criar produtos digitais que funcionam bem no dia a dia e crescem junto com o neg&oacute;cio.
           </p>
@@ -70,7 +70,7 @@
 
     <section class="process section-animate">
       <p class="eyebrow">Como trabalhamos</p>
-      <h2>Do diagn&oacute;stico &agrave; entrega, cada etapa tem inten&ccedil;&atilde;o.</h2>
+      <h2>Do diagn&oacute;stico &agrave; entrega, cada etapa tem inten&ccedil;&atilde;o<span class="orange-dot">.</span></h2>
       <div class="steps">
         <div class="step">
           <strong>01</strong>

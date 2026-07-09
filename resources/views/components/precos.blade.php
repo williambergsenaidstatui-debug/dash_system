@@ -10,7 +10,7 @@
     <div class="pricing-container">
         <div class="pricing-heading">
             <p class="projects-kicker">Nossos pre&ccedil;os</p>
-            <h3 class="projects-title" id="pricing-title">Planos para come&ccedil;ar com clareza.</h3>
+            <h3 class="projects-title" id="pricing-title">Planos para come&ccedil;ar com clareza<span class="orange-dot">.</span></h3>
             <p>
                 Valores iniciais para orientar seu projeto. O escopo final pode variar conforme funcionalidades,
                 integra&ccedil;&otilde;es e prazo de entrega.

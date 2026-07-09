@@ -13,9 +13,9 @@
     inset: 0 0 auto;
     z-index: 0;
     width: 100%;
-    height: min(100vh, 900px);
+    height: min(122vh, 1520px);
     background: #111827;
-    clip-path: polygon(0 0,100% 0,100% 72%,82% 78%,62% 73%,42% 84%,22% 76%,0 82%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 82% 95%, 62% 91%, 42% 98%, 22% 94%, 0 97%);
     pointer-events: none;
 }
 

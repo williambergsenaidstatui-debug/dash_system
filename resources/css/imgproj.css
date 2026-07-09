@@ -99,7 +99,7 @@
     position: absolute;
     inset: auto 0 0;
     z-index: 0;
-    height: 420px;
+    height: 820px;
     background: #111827;
     clip-path: polygon(0 100%,0% 60%,50% 90%,4% 70%,54% 45%,100% 65%,40% 52%,66% 54%,68% 54%,99% 34%,100% 33%,100% 100%,0 100%);
     pointer-events: none;

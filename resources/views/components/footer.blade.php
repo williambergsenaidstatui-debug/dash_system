@@ -28,9 +28,6 @@
                     <a href="{{ route('contato') }}" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white transition-all duration-300 hover:scale-110 hover:bg-blue-800">
                         <i class="fab fa-linkedin-in text-sm"></i>
                     </a>
-                    <a href="{{ route('diagnostico') }}" aria-label="Diagnóstico gratuito" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-purple-600 text-white transition-all duration-300 hover:scale-110 hover:bg-purple-700">
-                        <i class="fas fa-clipboard-check text-sm"></i>
-                    </a>
                 </div>
             </div>
 
@@ -43,7 +40,6 @@
                     <li><a href="{{ route('inicio') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Home</span></a></li>
                     <li><a href="{{ route('sobre') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Sobre</span></a></li>
                     <li><a href="{{ route('servicos') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Serviços</span></a></li>
-                    <li><a href="{{ route('diagnostico') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Diagnóstico</span></a></li>
                     <li><a href="{{ route('contato') }}" class="footer-link"><i class="fas fa-chevron-right"></i><span>Contato</span></a></li>
                 </ul>
             </div>
@@ -104,13 +100,7 @@
                     &copy; 2026 Todos os direitos reservados | Desenvolvido por
                     <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash Brasil</a>
                 </p>
-                <div class="flex gap-4 text-xs text-gray-500">
-                    <a href="#" class="transition-colors hover:text-gray-900">Política de Privacidade</a>
-                    <span>&bull;</span>
-                    <a href="#" class="transition-colors hover:text-gray-900">Termos de Uso</a>
-                    <span>&bull;</span>
-                    <a href="#" class="transition-colors hover:text-gray-900">Cookies</a>
-                </div>
+               
             </div>
         </div>
     </div>
