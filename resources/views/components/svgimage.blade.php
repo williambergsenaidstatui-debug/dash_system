@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <p class="svgimage-hint" aria-hidden="true">Arraste para girar · role para animar</p>
+
 </section>
 
 <style>
@@ -20,6 +20,7 @@
         width: min(1200px, 100%);
         min-height: calc(100vh - 110px);
         margin: 0 auto;
+        padding-inline: clamp(24px, 4vw, 56px);
         overflow: hidden;
         color: #fff;
     }
@@ -44,9 +45,10 @@
     .svgimage-copy {
         position: relative;
         z-index: 1;
-        width: min(520px, calc(100% - 48px));
-        margin: clamp(48px, 10vh, 110px) 24px 48px;
+        width: min(450px, 42%);
+        margin: clamp(48px, 10vh, 110px) 0 48px;
         padding: 30px;
+        font-family: "Plus Jakarta Sans", "Segoe UI", Arial, Helvetica, sans-serif;
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 24px;
         background: rgba(3, 11, 29, 0.35);
@@ -94,6 +96,7 @@
     @media (max-width: 768px) {
         .svgimage-hero {
             min-height: calc(100vh - 150px);
+            padding-inline: 0;
         }
 
         .svgimage-copy {
@@ -251,11 +254,15 @@
             return progress * progress * (3 - (2 * progress));
         };
 
+        const getHorizontalOffset = (desktopOffset) => (
+            window.matchMedia('(max-width: 768px)').matches ? 0 : desktopOffset
+        );
+
         const poses = [
-            { x: -6, y: 0, z: 0, px: 1.8, py: 0, scale: 0.92, camera: 13 },
-            { x: 0, y: 58, z: -2, px: 2.1, py: 0, scale: 0.98, camera: 12.4 },
-            { x: 0, y: -58, z: 2, px: 1.5, py: 0, scale: 0.98, camera: 12.4 },
-            { x: 70, y: 5, z: 0, px: 1.8, py: -0.45, scale: 1.02, camera: 11.8 },
+            { x: -6, y: 0, z: 0, px: 2.8, py: 0, scale: 0.92, camera: 13 },
+            { x: 0, y: 58, z: -2, px: 3.05, py: 0, scale: 0.98, camera: 12.4 },
+            { x: 0, y: -58, z: 2, px: 2.55, py: 0, scale: 0.98, camera: 12.4 },
+            { x: 70, y: 5, z: 0, px: 2.8, py: -0.45, scale: 1.02, camera: 11.8 },
         ];
 
         const updateScrollAnimation = () => {
@@ -271,7 +278,9 @@
             target.rotationX = THREE.MathUtils.degToRad(lerp(currentPose.x, nextPose.x, localProgress));
             target.rotationY = THREE.MathUtils.degToRad(lerp(currentPose.y, nextPose.y, localProgress));
             target.rotationZ = THREE.MathUtils.degToRad(lerp(currentPose.z, nextPose.z, localProgress));
-            target.positionX = initialPosition.x + lerp(currentPose.px, nextPose.px, localProgress);
+            target.positionX = initialPosition.x + getHorizontalOffset(
+                lerp(currentPose.px, nextPose.px, localProgress),
+            );
             target.positionY = initialPosition.y + lerp(currentPose.py, nextPose.py, localProgress);
             target.scale = lerp(currentPose.scale, nextPose.scale, localProgress);
             target.cameraZ = lerp(currentPose.camera, nextPose.camera, localProgress);
