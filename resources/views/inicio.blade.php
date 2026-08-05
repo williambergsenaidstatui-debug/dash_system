@@ -17,33 +17,7 @@
     <x-navbar />
 
     <main>
-        <section id="home" class="portfolio-hero section-animate">
-            <div class="portfolio-content">
-                <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio<span class="orange-dot">.</span></h1>
-                <h2>Desenvolvimento, automa&ccedil;&otilde;es e suporte em tecnologia</h2>
-                <p>
-                    A Dash Brasil cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
-                    sua presen&ccedil;a digital, automatizar tarefas e organizar processos com tecnologia.
-                </p>
-
-                <div class="portfolio-actions">
-                    <a class="portfolio-btn portfolio-btn-primary" href="{{ route('contato') }}">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                        Falar conosco
-                    </a>
-                </div>
-
-                <div class="portfolio-social" aria-label="Redes sociais">
-                    <a href="{{ route('contato') }}" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-visual" aria-hidden="true">
-                <i class="fas fa-laptop-code"></i>
-            </div>
-        </section>
+        <x-svgimage />
 
         <x-imgproj />
         @include('components.opiniao_cards')
