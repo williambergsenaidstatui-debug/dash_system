@@ -25,7 +25,7 @@
 
 <section class="px-4 py-12">
     <div class="mx-auto max-w-6xl">
-        <div class="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="services-card-grid grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
             @foreach ($servicos as $servico)
                 @php
                     $whatsappUrl = 'https://api.whatsapp.com/send?phone=5515998198163&text=' . rawurlencode('conversar com o time. Quero saber mais sobre esse plano: ' . $servico['titulo']);

@@ -5,7 +5,17 @@
             <span class="brand-title"></span>
         </a>
 
-        <nav class="nav" aria-label="Navega&ccedil;&atilde;o principal">
+        <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mainNavigation" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="mainNavigation" aria-label="Navega&ccedil;&atilde;o principal">
+            <div class="mobile-nav-header">
+                <img src="{{ asset('fotofinal.png') }}" alt="" aria-hidden="true">
+                <button class="mobile-nav-close" type="button" aria-label="Fechar menu">&times;</button>
+            </div>
             <ul>
                 <li><a href="{{ route('inicio') }}">In&iacute;cio</a></li>
                 <li><a href="{{ route('sobre') }}">Sobre N&oacute;s</a></li>
@@ -15,4 +25,5 @@
             </ul>
         </nav>
     </div>
+    <button class="mobile-nav-backdrop" type="button" tabindex="-1" aria-label="Fechar menu"></button>
 </header>

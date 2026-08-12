@@ -88,6 +88,13 @@ body {
     color: #000;
 }
 
+.mobile-nav-toggle,
+.mobile-nav-close,
+.mobile-nav-backdrop,
+.mobile-nav-header {
+    display: none;
+}
+
 @media (max-width: 560px) {
     #nav {
         width: min(100% - 24px, 1040px);
