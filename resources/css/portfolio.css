@@ -185,6 +185,12 @@
     background: transparent;
 }
 
+@media (min-width: 769px) {
+    .portfolio-page .project-folders {
+        padding-top: clamp(170px, 20vh, 220px);
+    }
+}
+
 .portfolio-page .project-folders__eyebrow,
 .portfolio-page .project-folders h1,
 .portfolio-page .folder-label {

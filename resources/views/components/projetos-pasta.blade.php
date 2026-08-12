@@ -2,18 +2,19 @@
     <header class="project-folders__header">
       <div>
         <p class="project-folders__eyebrow" style="margin-top: 15px;">Projetos em destaque</p>
-        <h1>Projetos reais em web e APIs<span class="orange-dot">.</span></h1>
-        <p>Mostramos soluções de back-end, experiências musicais e sites institucionais com foco em usabilidade, dados e apresentação.</p>
+        <h1>Projetos: <span class="orange-dot"></span></h1>
+        <p></p>
       </div>
     </header>
 
-    <section class="folders-container" id="foldersGrid" aria-label="Lista de projetos"></section>
+    <section class="folders-container" id="foldersGrid" aria-label="Galeria de projetos"></section>
 </section>
 
   <div class="modal-overlay" id="projectModal" aria-hidden="true">
     <article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal-media">
         <img id="modalImage" alt="">
+        <video id="modalVideo" controls playsinline preload="metadata" hidden aria-label="Vídeo de demonstração do projeto"></video>
         <button class="close-modal" type="button" id="closeModal" aria-label="Fechar modal">&times;</button>
       </div>
 

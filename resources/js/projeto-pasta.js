@@ -1,53 +1,49 @@
 (function() {
   const projects = [
     {
-      name: "Marvel API",
-      category: "API e Integração",
-      client: "Universo Marvel",
-      delivery: "API REST para heróis, quadrinhos e personagens com documentação e endpoints completos.",
-      description: "Serviço de dados para consultar personagens, séries e eventos do universo Marvel, ideal para apps, games e dashboards.",
+      name: "Explorador de Quadrinhos Marvel",
+      category: "Aplicação web com API",
+      client: "Projeto experimental",
+      delivery: "Aplicação que consulta e apresenta quadrinhos, personagens e conteúdos do universo Marvel.",
+      description: "App desenvolvido com integração à API da Marvel para explorar quadrinhos e informações do catálogo em uma interface visual e intuitiva.",
       images: ["/Capturar1.PNG", "/Capturar2.PNG", "/Capturar3.PNG"],
-      tags: ["API", "Laravel", "REST"],
+      tags: ["Marvel API", "Integração", "Web App"],
       link: "#"
     },
     {
-      name: "Site de Música",
-      category: "Experiência musical",
-      client: "Artistas e bandas",
-      delivery: "Site moderno com playlists, lançamentos e conteúdo interativo.",
-      description: "Projeto musical com player, home de lançamento, biografia e seções para engajar ouvintes.",
+      name: "Plataforma de Música",
+      category: "Integração com API musical",
+      client: "Projeto experimental",
+      delivery: "Site de testes conectado a uma API musical real para consultar e apresentar conteúdos de música.",
+      description: "Experimento de integração com uma API de música real, reunindo dados musicais em uma experiência moderna e interativa.",
       images: ["/Capturar4.PNG", "/Capturar5.PNG"],
-      tags: ["Música", "Player", "UX"],
+      tags: ["API Musical", "Integração", "UX"],
       link: "#"
     },
     {
-      name: "Landing institucional",
-      category: "Site corporativo",
-      client: "Cliente institucional",
-      delivery: "Página institucional com foco em apresentação de serviços e identidade visual.",
-      description: "Site corporativo desenvolvido para comunicar a marca, serviços e gerar novos contatos.",
-      images: ["/wlcars.png"],
-      tags: ["Web", "Design", "Responsivo"],
-      link: "#"
-    },
-    {
-      name: "Design de Interface",
-      category: "UI/UX Design",
-      client: "Cliente de design",
-      delivery: "Interface de usuário com foco em experiência, usabilidade e estética visual.",
-      description: "Projeto de design de interface para aplicativo ou sistema, priorizando navegação intuitiva e visual atraente.",
-      images: ["/logodash.png", "/ftnova.png", "/fotofinal.png"],
+      name: "Dashboard de Gestão",
+      category: "Sistema de gestão",
+      client: "Operação de serviços",
+      delivery: "Dashboard centralizado para visualizar informações, acompanhar indicadores e apoiar a gestão da operação.",
+      description: "Painel administrativo criado para organizar dados e oferecer uma visão clara das informações mais importantes do negócio.",
+      images: ["/image.png"],
       tags: ["Dashboard", "Gestão", "Interface"],
       link: "#"
     },
     {
-      name: "Portal de Serviços",
-      category: "Comunicação digital",
-      client: "Serviços online",
-      delivery: "Website com conteúdo institucional, serviços e contato otimizado.",
-      description: "Portal desenvolvido para apresentar serviços, gerar confiança e facilitar a conversão de clientes.",
-      images: ["/image.png"],
-      tags: ["Site", "Conteúdo", "Performance"],
+      name: "Petly — Marketplace Pet",
+      category: "Em desenvolvimento • Marketplace",
+      client: "Plataforma para pet shops",
+      delivery: "Aplicação multiplataforma para conectar clientes a pet shops, produtos e serviços em um só lugar.",
+      description: "Marketplace desenvolvido com React Native para mobile e web. A plataforma permitirá que diferentes pet shops se cadastrem, divulguem seus serviços e recebam agendamentos de clientes.",
+      images: [
+        "/pets/WhatsApp Image 2026-08-01 at 16.24.12.jpeg",
+        "/pets/WhatsApp Image 2026-08-01 at 16.24.12 (1).jpeg",
+        "/pets/WhatsApp Image 2026-08-01 at 16.24.13.jpeg",
+        "/pets/WhatsApp Image 2026-08-01 at 16.24.14.jpeg"
+      ],
+      video: "/pets/Gravação de Tela 2026-08-12 083432.mp4",
+      tags: ["React Native", "Mobile/Web", "Marketplace"],
       link: "#"
     },
     {
@@ -87,6 +83,7 @@
   const modal = document.getElementById("projectModal");
   const closeButton = document.getElementById("closeModal");
   const modalImage = document.getElementById("modalImage");
+  const modalVideo = document.getElementById("modalVideo");
   const modalGallery = document.getElementById("modalGallery");
   const modalTitle = document.getElementById("modalTitle");
   const modalCategory = document.getElementById("modalCategory");
@@ -105,26 +102,28 @@
 
     projects.forEach((project, index) => {
       const button = document.createElement("button");
-      button.className = "folder-wrapper";
+      button.className = "folder-wrapper project-thumbnail-card";
       button.type = "button";
       button.dataset.index = index;
-      button.setAttribute("aria-label", "Abrir informa&ccedil;&otilde;es do projeto " + project.name);
+      button.setAttribute("aria-label", "Abrir detalhes do projeto " + project.name);
 
       const previewSrc = Array.isArray(project.images) && project.images.length ? project.images[0] : project.image;
-      const preview = previewSrc
-        ? '<img class="project-preview" src="' + previewSrc + '" alt="Pr&eacute;via do projeto ' + project.name + '">'
-        : "";
+      const preview = project.video
+        ? '<video class="project-preview project-preview-video" src="' + project.video + '" poster="' + previewSrc + '" aria-label="Pr&eacute;via em vídeo do projeto ' + project.name + '" autoplay muted loop playsinline preload="metadata"></video>'
+        : previewSrc
+          ? '<img class="project-preview" src="' + previewSrc + '" alt="Pr&eacute;via do projeto ' + project.name + '" loading="lazy">'
+          : "";
 
       button.innerHTML = [
-        '<div class="pasta">',
-          '<div class="folder-back"></div>',
+        '<span class="project-card-media">',
           preview,
-          '<div class="folder-front">',
-            '<div class="aba"></div>',
-            '<div class="detalhe"></div>',
-          '</div>',
-        '</div>',
-        '<span class="folder-label">' + project.name + '</span>'
+          '<span class="project-card-action" aria-hidden="true">&nearr;</span>',
+        '</span>',
+        '<span class="project-card-content">',
+          '<span class="project-card-category">' + project.category + '</span>',
+          '<span class="folder-label">' + project.name + '</span>',
+          '<span class="project-card-tags">' + project.tags.slice(0, 3).map((tag) => '<span>' + tag + '</span>').join("") + '</span>',
+        '</span>'
       ].join("");
 
       button.addEventListener("click", () => openModal(project));
@@ -138,6 +137,12 @@
 
     modalImage.src = mainImage;
     modalImage.alt = "Imagem do projeto " + project.name;
+    modalImage.hidden = false;
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.hidden = true;
+      modalVideo.removeAttribute("src");
+    }
     modalTitle.innerHTML = project.name;
     modalCategory.innerHTML = project.category;
     modalDescription.innerHTML = project.description;
@@ -157,6 +162,16 @@
         thumbButton.addEventListener("click", () => setModalImage(src, thumbButton));
         modalGallery.appendChild(thumbButton);
       });
+
+      if (project.video && modalVideo) {
+        const videoButton = document.createElement("button");
+        videoButton.type = "button";
+        videoButton.className = "modal-thumbnail modal-video-thumbnail";
+        videoButton.setAttribute("aria-label", "Assistir ao vídeo do projeto " + project.name);
+        videoButton.innerHTML = '<span aria-hidden="true">▶</span><small>Vídeo</small>';
+        videoButton.addEventListener("click", () => setModalVideo(project.video, videoButton));
+        modalGallery.appendChild(videoButton);
+      }
     }
 
     modal.classList.add("active");
@@ -166,6 +181,11 @@
   }
 
   function setModalImage(src, selectedThumb) {
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.hidden = true;
+    }
+    modalImage.hidden = false;
     modalImage.src = src;
     if (!modalGallery) {
       return;
@@ -175,7 +195,24 @@
     });
   }
 
+  function setModalVideo(src, selectedThumb) {
+    if (!modalVideo) {
+      return;
+    }
+    modalImage.hidden = true;
+    modalVideo.hidden = false;
+    modalVideo.src = src;
+    modalVideo.load();
+    modalVideo.play().catch(() => {});
+    modalGallery.querySelectorAll(".modal-thumbnail").forEach((button) => {
+      button.classList.toggle("active", button === selectedThumb);
+    });
+  }
+
   function closeModal() {
+    if (modalVideo) {
+      modalVideo.pause();
+    }
     modal.classList.remove("active");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
