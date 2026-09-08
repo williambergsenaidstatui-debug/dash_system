@@ -1,4 +1,6 @@
 <x-guest-layout>
+    <h1 class="text-xl font-semibold mb-4">Criar conta</h1>
+    <p class="mb-4 text-sm">O acesso administrativo precisa ser liberado após o cadastro.</p>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 

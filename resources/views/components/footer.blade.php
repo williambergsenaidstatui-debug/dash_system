@@ -19,15 +19,13 @@
                     Transformando ideias em realidade digital.
                 </p>
                 <div class="flex flex-wrap gap-2 pt-2">
-                    <a href="{{ route('contato') }}" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gray-900 text-white transition-all duration-300 hover:scale-110 hover:bg-gray-700">
+                    <a href="https://www.instagram.com/brasildash_/" aria-label="Instagram" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gray-900 text-white transition-all duration-300 hover:scale-110 hover:bg-gray-700">
                         <i class="fab fa-instagram text-sm"></i>
                     </a>
                     <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-600 text-white transition-all duration-300 hover:scale-110 hover:bg-green-700">
                         <i class="fab fa-whatsapp text-sm"></i>
                     </a>
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white transition-all duration-300 hover:scale-110 hover:bg-blue-800">
-                        <i class="fab fa-linkedin-in text-sm"></i>
-                    </a>
+
                 </div>
             </div>
 
@@ -100,7 +98,7 @@
                     &copy; 2026 Todos os direitos reservados | Desenvolvido por
                     <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash Brasil</a>
                 </p>
-               
+
             </div>
         </div>
     </div>

@@ -27,13 +27,13 @@
                 </div>
 
                 <div class="team-social" aria-label="Redes de Williamberg Concei&ccedil;&atilde;o Bispo">
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.instagram.com/w.c.berg_?utm_source=qr&amp;stkn=MWFmMjNyMzRrY2Vjbw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="{{ route('contato') }}" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
+                    <a href="mailto:williamberg.senaidstatui@gmail.com" aria-label="E-mail">
+                        <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://wa.me/5515998198163" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -55,14 +55,14 @@
                 </div>
 
                 <div class="team-social" aria-label="Redes de Lucas Rafael Torres de Camargo">
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="{{ route('contato') }}" aria-label="Instagram">
+                    <a href="https://www.instagram.com/_lucastorresv?stkn=aTRvZDh0dnV5MjZj" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="mailto:dashbrasilds@gmail.com" aria-label="E-mail">
+                    <a href="mailto:lucastorres.senaidstatui@gmai.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </article>
@@ -83,11 +83,14 @@
                 </div>
 
                 <div class="team-social" aria-label="Redes de Leonardo Marin Vieira">
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.instagram.com/leomarinn.v?stkn=MTQ3dm51cm1xc2MzMg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="mailto:dashbrasilds@gmail.com" aria-label="E-mail">
+                    <a href="mailto:leomarin.senaidstatui@gmail.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </article>
@@ -108,11 +111,14 @@
                 </div>
 
                 <div class="team-social" aria-label="Redes de Eric Dias">
-                    <a href="{{ route('contato') }}" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.instagram.com/ericdiaas0?stkn=MTZweHNkaG1md25ycA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="mailto:dashbrasilds@gmail.com" aria-label="E-mail">
+                    <a href="mailto:ericdias.senaidstatui@gmail.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/5515998198163" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </article>

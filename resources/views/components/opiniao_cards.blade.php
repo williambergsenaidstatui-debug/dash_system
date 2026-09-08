@@ -11,11 +11,10 @@
                     <i class="fas fa-quote-left"></i>
                 </div>
                 <p class="testimonial-text">
-                    A Dash Brasil transformou a forma como gerenciamos nossos processos internos. O sistema
-                    personalizado ficou f&aacute;cil de usar e nos ajudou a economizar tempo.
+                  A Dash Brasil são muito profissionais, entregaram o projeto no prazo e com qualidade. A comunicação foi clara e eficiente, tornando a experiência de trabalhar com eles muito positiva.
                 </p>
                 <div class="testimonial-author">
-                    <strong>Joao Silva</strong>
+                    <strong>Daniel Alves Dos Anjos </strong>
 
                 </div>
             </article>
@@ -25,12 +24,11 @@
                     <i class="fas fa-quote-left"></i>
                 </div>
                 <p class="testimonial-text">
-                    O site institucional ficou moderno, responsivo e r&aacute;pido. Recebemos muitos elogios dos
-                    clientes pela apar&ecirc;ncia profissional.
+                   A Dash Brasil é um exemplo de código bem aplicado e segurança em desenvolvimento web. Eles entregaram um projeto de alta qualidade, com atenção aos detalhes e seguindo as melhores práticas de programação. Recomendo fortemente seus serviços.
                 </p>
                 <div class="testimonial-author">
-                    <strong>Maria Santos</strong>
-                    
+                    <strong>Vinicius Tardelli Leite</strong>
+
                 </div>
             </article>
 
@@ -44,7 +42,7 @@
                 </p>
                 <div class="testimonial-author">
                     <strong>Carlos Oliveira</strong>
-                   
+
                 </div>
             </article>
         </div>

@@ -16,7 +16,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view('auth.login');
+        return view('Login');
     }
 
     /**
@@ -27,6 +27,12 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+
+        if (! $request->user()->can('access-dashboard')) {
+            $request->session()->forget('url.intended');
+
+            return redirect()->route('profile.edit');
+        }
 
         return redirect()->intended(route('dashboard', absolute: false));
     }

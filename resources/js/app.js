@@ -1,6 +1,7 @@
 
 
 import Alpine from 'alpinejs';
+import './funcionalidade/Login';
 import './diagnostico';
 import './scroll-animation';
 import './contato';

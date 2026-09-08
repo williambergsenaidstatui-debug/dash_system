@@ -25,7 +25,7 @@
           <p class="project-folders__eyebrow" id="modalCategory"></p>
           <h2 class="modal-title" id="modalTitle"></h2>
           <p class="modal-description" id="modalDescription"></p>
-          <a class="modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer">Ver projeto</a>
+          <a class="modal-link" id="modalLink" target="_blank" rel="noopener noreferrer"></a>
         </div>
 
         <aside class="modal-info">

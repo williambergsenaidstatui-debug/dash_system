@@ -57,11 +57,11 @@ Route::get('/inicio', function () {
     return view('inicio');
 })->name('inicio.alias');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-
-
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'can:access-dashboard'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -77,7 +77,7 @@ Route::get('/gerar-sitemap', function () use ($buildSitemap) {
     $buildSitemap()->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap gerado com sucesso em /sitemap.xml!';
-});
+})->middleware(['auth', 'can:access-dashboard']);
 
 
 require __DIR__.'/auth.php';
