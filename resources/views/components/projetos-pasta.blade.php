@@ -1,3 +1,5 @@
+@props(['projects'])
+
 <section class="project-folders">
     <header class="project-folders__header">
       <div>
@@ -7,8 +9,22 @@
       </div>
     </header>
 
-    <section class="folders-container" id="foldersGrid" aria-label="Galeria de projetos"></section>
+    <section class="folders-container" id="foldersGrid" aria-label="Galeria de projetos">
+      <p class="projects-empty" id="projectsEmpty" hidden>Nenhum projeto publicado no momento.</p>
+    </section>
 </section>
+
+<script id="projectsData" type="application/json">{!! json_encode($projects->map(fn ($project) => [
+  'name' => $project->name,
+  'category' => $project->category,
+  'client' => $project->client,
+  'delivery' => $project->delivery,
+  'description' => $project->description,
+  'images' => $project->images ?? [],
+  'video' => $project->video_path,
+  'tags' => $project->technologies ?? [],
+  'link' => $project->link,
+]), JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) !!}</script>
 
   <div class="modal-overlay" id="projectModal" aria-hidden="true">
     <article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">

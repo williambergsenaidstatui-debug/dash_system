@@ -8,6 +8,8 @@
 @import "./contato.css";
 @import "./style.css";
 @import "./mobile.css";
+@import "./admin.css";
+@import "./auth.css";
 
 @tailwind base;
 @tailwind components;

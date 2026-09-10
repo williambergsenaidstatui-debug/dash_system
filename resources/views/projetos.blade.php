@@ -44,7 +44,7 @@
             </div>
         </section>
 
-    <x-projetos-pasta />
+    <x-projetos-pasta :projects=$projects />
 
     <x-time />
     </main>

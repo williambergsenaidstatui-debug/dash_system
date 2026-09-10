@@ -1,15 +1,19 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\ProfileController;
+use App\Models\Project;
+use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
 $buildSitemap = function (): Sitemap {
     $appUrl = rtrim(config('app.url'), '/');
 
-    return Sitemap::create()
+    $sitemap = app()->bound(Sitemap::class) ? app(Sitemap::class) : Sitemap::create();
+
+    return $sitemap
         ->add(Url::create($appUrl))
         ->add(Url::create($appUrl.'/portifolio'))
         ->add(Url::create($appUrl.'/projetos'))
@@ -23,14 +27,14 @@ Route::get('/', function () {
     return view('inicio');
 })->name('inicio');
 
-
-
 Route::get('/portifolio', function () {
     return view('portifolio');
 })->name('portfolio');
 
 Route::get('/projetos', function () {
-    return view('projetos');
+    return view('projetos', [
+        'projects' => Project::published()->orderBy('sort_order')->orderByDesc('updated_at')->get(),
+    ]);
 })->name('projetos');
 
 Route::get('/sobre', function () {
@@ -51,16 +55,15 @@ Route::get('/diagnostico', function () {
     return view('diagnostico');
 })->name('diagnostico');
 
-
-
 Route::get('/inicio', function () {
     return view('inicio');
 })->name('inicio.alias');
 
 Route::middleware(['auth', 'can:access-dashboard'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [ProjectController::class, 'index'])->name('dashboard');
+    Route::resource('admin/projects', ProjectController::class)
+        ->except(['index', 'show'])
+        ->names('admin.projects');
 });
 
 Route::middleware('auth')->group(function () {
@@ -78,6 +81,5 @@ Route::get('/gerar-sitemap', function () use ($buildSitemap) {
 
     return 'Sitemap gerado com sucesso em /sitemap.xml!';
 })->middleware(['auth', 'can:access-dashboard']);
-
 
 require __DIR__.'/auth.php';
