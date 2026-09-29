@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\Pagamentos\CheckoutController;
+use App\Http\Controllers\Pagamentos\OrderController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
@@ -54,6 +56,12 @@ Route::post('/contato', [ContatoController::class, 'enviar'])->name('contato.env
 Route::get('/diagnostico', function () {
     return view('diagnostico');
 })->name('diagnostico');
+
+Route::prefix('pagamentos')->name('pagamentos.')->group(function () {
+    Route::get('/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
+    Route::get('/pedidos/{pedido}', [OrderController::class, 'show'])->name('pedidos.show');
+});
 
 Route::get('/inicio', function () {
     return view('inicio');

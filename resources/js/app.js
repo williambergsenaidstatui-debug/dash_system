@@ -9,6 +9,7 @@ import './projeto-pasta';
 import './mobile-nav';
 import './mobile-carousels';
 import './gsap';
+import './pagamentos/asaas-checkout';
 
 window.Alpine = Alpine;
 

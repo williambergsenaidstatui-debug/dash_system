@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    'asaas' => [
+        'environment' => env('ASAAS_ENV', 'sandbox'),
+        'access_token' => env('ASAAS_ACCESS_TOKEN'),
+        'webhook_token' => env('ASAAS_WEBHOOK_TOKEN'),
+        'sandbox_url' => env('ASAAS_SANDBOX_URL', 'https://api-sandbox.asaas.com/v3'),
+        'production_url' => env('ASAAS_PRODUCTION_URL', 'https://api.asaas.com/v3'),
+        'timeout' => (int) env('ASAAS_TIMEOUT', 15),
+        'connect_timeout' => (int) env('ASAAS_CONNECT_TIMEOUT', 5),
+    ],
+
 ];
