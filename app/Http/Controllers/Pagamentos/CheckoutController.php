@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Pagamentos;
-
 use App\Http\Controllers\Controller;
-use App\Models\Pagamentos\PagamentoCliente;
-use App\Models\Pagamentos\PagamentoPedido;
+
+use App\Models\Pagamentos\PagamentoCliente as Customer;
+use App\Models\Pagamentos\PagamentoPedido as Order;
+use App\Models\Product;
 use App\Services\Pagamentos\AsaasClient;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -14,14 +15,17 @@ use Illuminate\View\View;
 
 class CheckoutController extends Controller
 {
-    public function create(): View
+    public function create(Product $product): View
     {
-        return view('pagamentos.checkout');
+        abort_unless($product->is_active, 404);
+
+        return view('pagamentos.checkout', ['product' => $product]);
     }
 
     public function store(Request $request, AsaasClient $asaas): RedirectResponse
     {
         $data = $request->validate([
+            'product_id' => ['required', 'integer', Rule::exists('products', 'id')->where('is_active', true)],
             'name' => ['required', 'string', 'max:255'],
             'cpf_cnpj' => ['required', 'string', 'max:20'],
             'email' => ['required', 'email', 'max:255'],
@@ -29,7 +33,9 @@ class CheckoutController extends Controller
             'payment_method' => ['required', Rule::in(['PIX', 'BOLETO', 'CREDIT_CARD'])],
         ]);
 
-        $cliente = PagamentoCliente::firstOrCreate(
+        $product = Product::query()->where('is_active', true)->findOrFail($data['product_id']);
+
+        $customer = Customer::firstOrCreate(
             ['cpf_cnpj' => $data['cpf_cnpj']],
             [
                 'name' => $data['name'],
@@ -38,29 +44,30 @@ class CheckoutController extends Controller
             ],
         );
 
-        if (blank($cliente->asaas_customer_id)) {
-            $asaasCustomer = $asaas->createCustomer($cliente->only(['name', 'cpf_cnpj', 'email', 'phone']));
-            $cliente->update(['asaas_customer_id' => $asaasCustomer['id']]);
+        if (blank($customer->asaas_customer_id)) {
+            $asaasCustomer = $asaas->createCustomer($customer->only(['name', 'cpf_cnpj', 'email', 'phone']));
+            $customer->update(['asaas_customer_id' => $asaasCustomer['id']]);
         }
 
-        $pedido = PagamentoPedido::create([
-            'pagamento_cliente_id' => $cliente->id,
+        $order = Order::create([
+            'pagamento_cliente_id' => $customer->id,
+            'product_id' => $product->id,
             'code' => Str::upper(Str::random(10)),
-            'description' => 'Pedido demonstrativo',
-            'amount' => 49.90,
+            'description' => $product->name,
+            'amount' => $product->price,
             'payment_method' => $data['payment_method'],
         ]);
 
         $payment = $asaas->createPayment([
-            'customer' => $cliente->asaas_customer_id,
+            'customer' => $customer->asaas_customer_id,
             'billing_type' => $data['payment_method'],
-            'value' => (float) $pedido->amount,
+            'value' => (float) $order->amount,
             'due_date' => now()->addDay()->toDateString(),
-            'description' => $pedido->description,
-            'external_reference' => $pedido->code,
+            'description' => $order->description,
+            'external_reference' => $order->code,
         ]);
 
-        $pedido->update([
+        $order->update([
             'asaas_payment_id' => $payment['id'],
             'asaas_status' => $payment['status'] ?? null,
             'invoice_url' => $payment['invoiceUrl'] ?? null,
@@ -70,13 +77,13 @@ class CheckoutController extends Controller
         if ($data['payment_method'] === 'PIX') {
             $pixQrCode = $asaas->pixQrCode($payment['id']);
 
-            $pedido->update([
+            $order->update([
                 'pix_payload' => $pixQrCode['payload'] ?? null,
                 'pix_encoded_image' => $pixQrCode['encodedImage'] ?? null,
                 'pix_expiration_date' => $pixQrCode['expirationDate'] ?? null,
             ]);
         }
 
-        return redirect()->route('pagamentos.pedidos.show', $pedido);
+        return redirect()->route('pagamentos.pedidos.show', $order);
     }
 }

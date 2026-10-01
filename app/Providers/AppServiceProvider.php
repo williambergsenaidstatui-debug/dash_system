@@ -25,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Gate::define('manage-products', fn (User $user): bool => $user->cargo === 'adm');
+
         Gate::define('access-dashboard', fn (User $user): bool => $user->cargo === 'adm');
 
         RateLimiter::for('registration', fn (Request $request) =>

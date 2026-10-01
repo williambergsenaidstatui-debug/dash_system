@@ -5,6 +5,9 @@
         </a>
 
         <div class="admin-nav__links" aria-label="Atalhos">
+            @can('manage-products')
+                <a href="{{ route('pagamentos.dashboard.index') }}" class="admin-nav__link">Produtos</a>
+            @endcan
             @can('access-dashboard')
                 <a href="{{ route('dashboard') }}" @class(['admin-nav__link', 'is-active' => request()->routeIs('dashboard')])>Painel</a>
                 <a href="{{ route('admin.projects.create') }}" @class(['admin-nav__link', 'is-active' => request()->routeIs('admin.projects.create')])>Novo projeto</a>
@@ -34,6 +37,9 @@
     </div>
 
     <div id="adminMobileMenu" x-cloak x-show="mobileOpen" x-transition class="admin-nav__mobile">
+        @can('manage-products')
+            <a href="{{ route('pagamentos.dashboard.index') }}">Produtos</a>
+        @endcan
         @can('access-dashboard')
             <a href="{{ route('dashboard') }}">Painel</a>
             <a href="{{ route('admin.projects.create') }}">Novo projeto</a>

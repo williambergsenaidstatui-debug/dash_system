@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Checkout Asaas</title>
+    <title>Comprar {{ $product->name }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="min-h-screen bg-zinc-50 text-zinc-950">
     <main class="mx-auto grid min-h-screen w-full max-w-6xl gap-8 px-6 py-8 lg:grid-cols-[1fr_420px] lg:items-center">
         <section class="space-y-8">
             <div class="space-y-4">
-                <p class="text-sm font-semibold uppercase text-emerald-700">Checkout Asaas</p>
-                <h1 class="max-w-3xl text-4xl font-bold leading-tight md:text-5xl">Pagamento integrado ao Asaas</h1>
-                <p class="max-w-2xl text-lg text-zinc-600">Fluxo base para cadastrar cliente, gerar cobranca e atualizar o pedido quando o webhook confirmar o pagamento.</p>
+                <a href="{{ route('pagamentos.products.index') }}" class="text-sm font-semibold text-emerald-700">← Voltar à loja</a>
+                <h1 class="max-w-3xl text-4xl font-bold leading-tight md:text-5xl">{{ $product->name }}</h1>
+                <p class="max-w-2xl whitespace-pre-line break-words text-lg text-zinc-600">{{ $product->description }}</p>
             </div>
 
             <div class="grid gap-4 sm:grid-cols-3">
                 <div class="rounded-lg border border-zinc-200 bg-white p-5">
-                    <p class="text-sm text-zinc-500">Ambiente</p>
-                    <p class="mt-2 text-xl font-semibold">{{ config('services.asaas.environment') }}</p>
+                    <p class="text-sm text-zinc-500">Pagamento</p>
+                    <p class="mt-2 text-xl font-semibold">Pix, boleto ou cartão</p>
                 </div>
                 <div class="rounded-lg border border-zinc-200 bg-white p-5">
                     <p class="text-sm text-zinc-500">Produto</p>
-                    <p class="mt-2 text-xl font-semibold">Pedido demonstrativo</p>
+                    <p class="mt-2 text-xl font-semibold">{{ $product->name }}</p>
                 </div>
                 <div class="rounded-lg border border-zinc-200 bg-white p-5">
                     <p class="text-sm text-zinc-500">Total</p>
-                    <p class="mt-2 text-xl font-semibold">R$ 49,90</p>
+                    <p class="mt-2 text-xl font-semibold">R$ {{ number_format((float) $product->price, 2, ',', '.') }}</p>
                 </div>
             </div>
         </section>
@@ -34,6 +34,8 @@
         <section class="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
             <form method="POST" action="{{ route('pagamentos.checkout.store') }}" class="space-y-5">
                 @csrf
+                <input type="hidden" name="product_id" value="{{ $product->id }}">
+                @error('product_id') <p role="alert" class="text-sm text-red-600">Este produto não está mais disponível. Volte à loja e escolha outro.</p> @enderror
 
                 <div>
                     <label for="name" class="text-sm font-medium text-zinc-700">Nome completo</label>
@@ -72,7 +74,7 @@
                     @error('payment_method') <p class="text-sm text-red-600">{{ $message }}</p> @enderror
                 </fieldset>
 
-                <button class="w-full rounded-md bg-emerald-700 px-4 py-3 font-semibold text-white transition hover:bg-emerald-800">Gerar cobranca</button>
+                <button class="w-full rounded-md bg-emerald-700 px-4 py-3 font-semibold text-white transition hover:bg-emerald-800">Gerar cobrança de R$ {{ number_format((float) $product->price, 2, ',', '.') }}</button>
             </form>
         </section>
     </main>

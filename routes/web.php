@@ -58,7 +58,13 @@ Route::get('/diagnostico', function () {
 })->name('diagnostico');
 
 Route::prefix('pagamentos')->name('pagamentos.')->group(function () {
-    Route::get('/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::get('/', [\App\Http\Controllers\Pagamentos\ProductController::class, 'index'])->name('products.index');
+    Route::get('/checkout', fn () => redirect()->route('pagamentos.products.index'));
+    Route::get('/products/{product}/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::middleware(['auth', 'can:manage-products'])->prefix('dashboard')->name('dashboard.')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Pagamentos\Dashboard\ProductController::class, 'index'])->name('index');
+        Route::resource('products', \App\Http\Controllers\Pagamentos\Dashboard\ProductController::class)->only(['create', 'store', 'edit', 'update']);
+    });
     Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
     Route::get('/pedidos/{pedido}', [OrderController::class, 'show'])->name('pedidos.show');
 });
