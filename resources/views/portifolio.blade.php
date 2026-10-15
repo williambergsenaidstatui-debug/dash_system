@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dash Brasil | Empresa de TI</title>
+    <title>Brasil Dash | Empresa de TI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
                 <h1>Solu&ccedil;&otilde;es digitais para o seu neg&oacute;cio<span class="orange-dot">.</span></h1>
                 <h2>Desenvolvimento, automa&ccedil;&otilde;es e suporte em tecnologia</h2>
                 <p>
-                    A Dash Brasil cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
+                    A Brasil Dash cria sites, sistemas e integra&ccedil;&otilde;es para empresas que querem melhorar
                     sua presen&ccedil;a digital, automatizar tarefas e organizar processos com tecnologia.
                 </p>
 
@@ -48,7 +48,7 @@
         <x-imgproj />
         @include('components.opiniao_cards')
 
-        
+
     </main>
 
     <div id="contato">

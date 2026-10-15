@@ -1,8 +1,8 @@
-<section id="home" class="svgimage-hero section-animate" aria-label="Apresentação da Dash Brasil">
+<section id="home" class="svgimage-hero section-animate" aria-label="Apresentação da Brasil Dash">
     <canvas class="svgimage-canvas" aria-hidden="true"></canvas>
 
     <div class="svgimage-copy">
-        <p class="svgimage-eyebrow">Dash Brasil</p>
+        <p class="svgimage-eyebrow">Brasil Dash</p>
         <h1>Soluções digitais para o seu negócio<span class="orange-dot">.</span></h1>
         <p>
             Estratégia, tecnologia e experiência para criar produtos digitais que funcionam no dia a dia

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | Dash Brasil</title>
+  <title>Contato | Brasil Dash</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
   <main class="contact-page">
     <section class="contact-hero section-animate">
       <div class="contact-hero__inner">
-        <a href="sobrenos.html" class="brand-mark" aria-label="Dash Brasil">
+        <a href="sobrenos.html" class="brand-mark" aria-label="Brasil Dash">
 
 
         </a>

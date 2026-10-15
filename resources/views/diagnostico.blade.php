@@ -4,13 +4,13 @@
     <link rel="icon" href="{{ asset('pretobranco.png') }}?v={{ filemtime(public_path('pretobranco.png')) }}" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico Gratuito - Dash Brasil</title>
+    <title>Diagnóstico Gratuito - Brasil Dash</title>
     <x-animation-scripts />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="diagnostico-page portfolio-page">
     <nav class="diagnostico-nav">
-        <a class="diagnostico-logo" href="{{ route('inicio') }}">Dash Brasil</a>
+        <a class="diagnostico-logo" href="{{ route('inicio') }}">Brasil Dash</a>
         <a class="diagnostico-back" href="{{ route('inicio') }}">&larr; Voltar ao site</a>
     </nav>
 
@@ -143,7 +143,7 @@
             </div>
 
             <div class="diagnosis-box">
-                <h3>Como a Dash Brasil pode ajudar</h3>
+                <h3>Como a Brasil Dash pode ajudar</h3>
                 <div id="solucoes-list"></div>
             </div>
 

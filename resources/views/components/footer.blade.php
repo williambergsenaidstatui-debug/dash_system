@@ -12,7 +12,7 @@
                     <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-black">
                         <span class="text-lg font-bold text-white">D</span>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900">Dash Brasil</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Brasil Dash</h3>
                 </div>
                 <p class="text-sm leading-relaxed text-gray-600">
                     Estamos focados no desenvolvimento web, automações e soluções tecnológicas sob medida para empresas.
@@ -96,7 +96,7 @@
             <div class="flex flex-col items-center justify-between gap-4 text-center md:flex-row">
                 <p class="text-xs text-gray-500">
                     &copy; 2026 Todos os direitos reservados | Desenvolvido por
-                    <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Dash Brasil</a>
+                    <a href="{{ route('inicio') }}" class="font-semibold text-gray-900 hover:underline">Brasil Dash</a>
                 </p>
 
             </div>

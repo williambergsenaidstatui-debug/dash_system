@@ -1,7 +1,7 @@
 <nav x-data="{ mobileOpen: false, accountOpen: false }" class="admin-nav" aria-label="Navegacao administrativa">
     <div class="admin-nav__inner">
-        <a href="{{ route('dashboard') }}" class="admin-nav__brand" aria-label="Dashboard Dash Brasil">
-            <img src="{{ asset('fotofinal.png') }}" alt="Dash Brasil">
+        <a href="{{ route('dashboard') }}" class="admin-nav__brand" aria-label="Dashboard Brasil Dash">
+            <img src="{{ asset('fotofinal.png') }}" alt="Brasil Dash">
         </a>
 
         <div class="admin-nav__links" aria-label="Atalhos">

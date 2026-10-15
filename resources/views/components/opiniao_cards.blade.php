@@ -2,7 +2,7 @@
     <div class="testimonials-container">
         <div class="testimonials-heading">
             <p class="projects-kicker">Opini&otilde;es</p>
-            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Dash Brasil<span class="orange-dot">.</span></h3>
+            <h3 class="projects-title" id="opinioes-title">O que clientes dizem sobre a Brasil Dash<span class="orange-dot">.</span></h3>
         </div>
 
         <div class="testimonials-grid">
@@ -11,7 +11,7 @@
                     <i class="fas fa-quote-left"></i>
                 </div>
                 <p class="testimonial-text">
-                  A Dash Brasil são muito profissionais, entregaram o projeto no prazo e com qualidade. A comunicação foi clara e eficiente, tornando a experiência de trabalhar com eles muito positiva.
+                  A Brasil Dash são muito profissionais, entregaram o projeto no prazo e com qualidade. A comunicação foi clara e eficiente, tornando a experiência de trabalhar com eles muito positiva.
                 </p>
                 <div class="testimonial-author">
                     <strong>Daniel Alves Dos Anjos </strong>
@@ -24,7 +24,7 @@
                     <i class="fas fa-quote-left"></i>
                 </div>
                 <p class="testimonial-text">
-                   A Dash Brasil é um exemplo de código bem aplicado e segurança em desenvolvimento web. Eles entregaram um projeto de alta qualidade, com atenção aos detalhes e seguindo as melhores práticas de programação. Recomendo fortemente seus serviços.
+                   A Brasil Dash é um exemplo de código bem aplicado e segurança em desenvolvimento web. Eles entregaram um projeto de alta qualidade, com atenção aos detalhes e seguindo as melhores práticas de programação. Recomendo fortemente seus serviços.
                 </p>
                 <div class="testimonial-author">
                     <strong>Vinicius Tardelli Leite</strong>

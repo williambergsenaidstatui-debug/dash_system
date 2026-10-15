@@ -5,7 +5,7 @@
 
         <div class="projects-grid">
         <article class="project-card section-animate">
-            <img class="project-image" src="{{ asset('image.png') }}" alt="Dashboard de sistema desenvolvido pela Dash Brasil">
+            <img class="project-image" src="{{ asset('image.png') }}" alt="Dashboard de sistema desenvolvido pela Brasil Dash">
             <div class="project-copy">
                 <h4>Sistemas sob medida</h4>
                 <p>
